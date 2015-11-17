@@ -52,6 +52,7 @@
 	bottomRightLiftExp : INT;
 	bottomRightLiftExpArr : ARRAY[1..5] OF INT;
 	
+	ERR: INT;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

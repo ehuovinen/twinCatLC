@@ -3,10 +3,102 @@
   <POU Name="MAIN" Id="{ac688648-09a1-4b3d-950c-242df7ea7e88}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	T1: BOOL;
+	fcT1: TOF;
+	fcT2: TOF;
+	fcT3: TOF;
+	fcT4: TOF;
+	fcT5: TOF;
+	fcT6: TOF;
+	fcT7: TOF;
+	fcT8: TOF;
+	T2: BOOL;
+	T3: BOOL;
+	T4: BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[//object entrance location top righ on lift.
+IF I_bPieceRightLift AND I_bRightLiftUp AND NOT T1 THEN
+	IF topRightLiftExp = 0 THEN
+		IF obj1 = 0 THEN
+			obj1:=1;
+			topRightExp :=topRightExp+1;
+			topRightExpArr[topRightExp]:=1;
+		ELSIF obj2 = 0 THEN
+			obj2:=1;
+			topRightExp :=topRightExp+1;
+			topRightExpArr[topRightExp]:=2;
+		ELSIF obj3 = 0 THEN
+			obj3:=1;
+			topRightExp :=topRightExp+1;
+			topRightExpArr[topRightExp]:=3;
+		ELSIF obj4 = 0 THEN
+			obj4:=1;
+			topRightExp :=topRightExp+1;
+			topRightExpArr[topRightExp]:=4;
+		END_IF
+	ELSE
+			topRightExp := topRightExp+1;
+			topRightExpArr[topRightExp]:= topRightLiftExpArr[1];
+			topRightLiftExp := 0;
+			topRightLiftExpArr[1] := 0;					
+	END_IF
+END_IF
+fcT1(IN:=(I_bPieceRightLift AND I_bRightLiftUp), PT:=T#1S, Q=>T1);
+
+IF I_bTopBeltRight AND NOT T2 THEN
+	IF topRightExp = 0 THEN
+		ERR := 1;
+	ELSE
+		topRightExp := topRightExp -1;	
+		topLeftExp := topLeftExp +1;
+		topLeftExpArr[topLeftExp] := topRightExpArr[1];
+		topRightExpArr[1] := topRightExpArr[2];
+		topRightExpArr[2] := topRightExpArr[3];
+		topRightExpArr[3] := topRightExpArr[4];
+		topRightExpArr[4] := topRightExpArr[5];
+	 	topRightExpArr[5] := 0;		
+	END_IF
+END_IF
+fcT2(IN:=I_bTopBeltRight, PT:=T#300MS, Q=>T2);
+
+IF I_bTopBeltLeft AND NOT T3 THEN
+	IF topLeftExp = 0 THEN
+		ERR := 2;
+	ELSE
+		topLeftExp := topLeftExp -1;	
+		topLeftLiftExp := topLeftLiftExp +1;
+		topLeftLiftExpArr[topLeftLiftExp] :=topLeftExpArr[1];
+		topLeftExpArr[1] := topLeftExpArr[2];
+		topLeftExpArr[2] := topLeftExpArr[3];
+		topLeftExpArr[3] := topLeftExpArr[4];
+		topLeftExpArr[4] := topLeftExpArr[5];
+	 	topLeftExpArr[5] := 0;		
+	END_IF
+END_IF
+fcT3(IN:=I_bTopBeltRight, PT:=T#300MS, Q=>T3);
+
+IF I_bLeftLiftUp AND I_bPieceLeftLift AND NOT T4 THEN
+	IF topLeftLiftExp = 0 THEN
+		ERR := 3;
+	ELSE
+		topLeftLiftExp := topLeftLiftExp - 1;
+		bottomLeftLiftExp := bottomLeftLiftExp +1;
+		bottomLeftLiftExpArr[bottomLeftLiftExp] := topLeftLiftExpArr[1];
+		topLeftLiftExpArr[1] := topLeftLiftExpArr[2];
+		topLeftLiftExpArr[2] := topLeftLiftExpArr[3];
+		topLeftLiftExpArr[3] := topLeftLiftExpArr[4];
+		topLeftLiftExpArr[4] := topLeftLiftExpArr[5];
+		topLeftLiftExpArr[5] := 0;
+	END_IF
+END_IF
+fcT4(IN:=(I_bLeftLiftUp AND I_bPieceLeftLift), PT:=T#300MS, Q=>T4);
+
+
+
+
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
