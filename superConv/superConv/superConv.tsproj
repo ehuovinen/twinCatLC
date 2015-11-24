@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4018.13">
-	<Project ProjectGUID="{001D0C21-7A0F-425F-97B4-19702CD4D700}" Target64Bit="true">
+	<Project ProjectGUID="{001D0C21-7A0F-425F-97B4-19702CD4D700}" TargetNetId="5.29.55.234.1.1">
 		<System>
 			<Tasks>
 				<Task Id="2" Priority="20" CycleTime="100000" AmsPort="350">
@@ -13,6 +13,180 @@
 				<Instance Id="#x01010010" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
 					<Name>liftConv Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Vars VarGrpType="1">
+						<Name>PlcTask Inputs</Name>
+						<Var>
+							<Name>GVL.I_bPieceLeftLift</Name>
+							<Comment>
+								<![CDATA[ DI 1 - Piece in the left lift]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bPieceRightLift</Name>
+							<Comment>
+								<![CDATA[ DI 2 - Piese in the right lift]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bRightLiftBottom</Name>
+							<Comment>
+								<![CDATA[ DI 3 - Right lift is bottom]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bRightLiftUp</Name>
+							<Comment>
+								<![CDATA[ DI 4 - Right lift is up]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bLeftLiftBottom</Name>
+							<Comment>
+								<![CDATA[ DI 5 - Left lift is down]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bLeftLiftUp</Name>
+							<Comment>
+								<![CDATA[ DI 6 - Left lift is up]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bLowBeltRight</Name>
+							<Comment>
+								<![CDATA[ DI 7 - Piece on low belt right side]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bTopBeltRight</Name>
+							<Comment>
+								<![CDATA[ DI 8 - Piece on top belt right side]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bLowBeltLeft</Name>
+							<Comment>
+								<![CDATA[ DI 9 - Piece on low belt left side]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bTopBeltLeft</Name>
+							<Comment>
+								<![CDATA[ DI 10 - Piece on top belt left side]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bInput11</Name>
+							<Comment>
+								<![CDATA[ DI 11 - Empty]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bInput12</Name>
+							<Comment>
+								<![CDATA[ DI 12 - Empty]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>GVL.O_bLeftLiftUp</Name>
+							<Comment>
+								<![CDATA[ DO 1 - Left Lift up]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bLeftLiftDown</Name>
+							<Comment>
+								<![CDATA[ DO 2 - Left Lift down]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bRightLiftDown</Name>
+							<Comment>
+								<![CDATA[ DO 3 - Right Lift down]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bRightLiftUp</Name>
+							<Comment>
+								<![CDATA[ DO 4 - Right Lift up]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bRightLiftBeltLeft</Name>
+							<Comment>
+								<![CDATA[ DO 5 - Lift Right belt left]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bRightLiftBeltRight</Name>
+							<Comment>
+								<![CDATA[ DO 6 - Lift Right belt right]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bLeftLiftBeltRight</Name>
+							<Comment>
+								<![CDATA[ DO 7 - Lift Left belt right]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bLeftLiftBeltLeft</Name>
+							<Comment>
+								<![CDATA[ DO 8 - Lift Left belt left]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bTopBeltLeft</Name>
+							<Comment>
+								<![CDATA[ DO 9 - Top belt left]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bLowBeltRight</Name>
+							<Comment>
+								<![CDATA[ DO 10 - Low belt right]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bTopBeltRight</Name>
+							<Comment>
+								<![CDATA[ DO 11 - Top belt right]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.O_bLowBeltLeft</Name>
+							<Comment>
+								<![CDATA[ DO 12 - Low belt left]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+					</Vars>
 					<TaskPouOids>
 						<TaskPouOid Prio="20" OTCID="#x01010011"/>
 					</TaskPouOids>
