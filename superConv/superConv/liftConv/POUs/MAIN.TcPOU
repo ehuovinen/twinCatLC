@@ -92,7 +92,7 @@ fcT3(IN:=I_bTopBeltRight, PT:=T#300MS, Q=>T3);
 //----------------------------------------------------------
 //object detected on left lift when the lift is up
 
-IF I_bLeftLiftUp AND I_bPieceLeftLift AND NOT T4 THEN
+IF I_bLeftLiftUp AND leftLiftOptical_IbAND NOT T4 THEN
 	IF topLeftLiftExp = 0 THEN
 		ERR := 3;
 	ELSE
@@ -111,7 +111,7 @@ fcT4(IN:=(I_bLeftLiftUp AND I_bPieceLeftLift), PT:=T#300MS, Q=>T4);
 //----------------------------------------------------------
 //object detected on left lift when the lift is down
 
-IF I_bLeftLiftBottom AND I_bPieceLeftLift AND NOT T4 THEN
+IF I_bLeftLiftDown AND leftLiftOptical_Ib AND NOT T4 THEN
 	IF topLeftLiftExp = 0 THEN
 		ERR := 3;
 	ELSE

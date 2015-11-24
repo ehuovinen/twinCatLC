@@ -2,31 +2,64 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4018.2">
   <GVL Name="GVL" Id="{da4090e4-8480-437c-b104-bf64039af5dc}">
     <Declaration><![CDATA[VAR_GLOBAL
-	I_bPieceLeftLift 		AT %I*: BOOL;	// DI 1 - Piece in the left lift
-	I_bPieceRightLift 		AT %I*: BOOL;	// DI 2 - Piese in the right lift
-	I_bRightLiftBottom		AT %I*: BOOL;	// DI 3 - Right lift is bottom
-	I_bRightLiftUp 			AT %I*: BOOL;	// DI 4 - Right lift is up
-	I_bLeftLiftBottom		AT %I*: BOOL;	// DI 5 - Left lift is down
-	I_bLeftLiftUp			AT %I*: BOOL;	// DI 6 - Left lift is up
-	I_bLowBeltRight			AT %I*: BOOL;	// DI 7 - Piece on low belt right side
-	I_bTopBeltRight			AT %I*: BOOL;	// DI 8 - Piece on top belt right side
-	I_bLowBeltLeft			AT %I*: BOOL;	// DI 9 - Piece on low belt left side
-	I_bTopBeltLeft			AT %I*: BOOL;	// DI 10 - Piece on top belt left side
+	leftLiftOptical_IB AT %I*: BOOL; // DI 1 - Piece in the left lift
+	rightLiftOptical_IB AT %I*: BOOL; // DI 2 - Piese in the right lift
+	I_bPieceLeftLift 		AT %I*: BOOL;	
+	I_bPieceRightLift 		AT %I*: BOOL;
+	rightLiftDownPosition_IB AT %I*: BOOL;	// DI 3 - Right lift is bottom
+	rightLiftUpPosition_IB AT %I*: BOOL;	// DI 4 - Right lift is up
+	I_bRightLiftBottom		AT %I*: BOOL;	
+	I_bRightLiftUp 			AT %I*: BOOL;
+	leftLiftDownPosition_IB AT %I*: BOOL;	// DI 5 - Left lift is down
+	lefttLiftUpPosition_IB AT %I*: BOOL;	// DI 6 - Left lift is up	
+	I_bLeftLiftDown		AT %I*: BOOL;	
+	I_bLeftLiftUp			AT %I*: BOOL;	
+	bottomBeltRight_IB AT %I*: BOOL;		// DI 7 - Piece on low belt right side
+	topBeltRight_IB AT %I*: BOOL;			// DI 8 - Piece on top belt right side
+	I_bLowBeltRight			AT %I*: BOOL;	
+	I_bTopBeltRight			AT %I*: BOOL;
+	bottomBeltLeft_IB AT %I*: BOOL;		// DI 9 - Piece on low belt left side
+	topBeltLeft_IB AT %I*: BOOL;		// DI 10 - Piece on top belt left side
+	I_bLowBeltLeft			AT %I*: BOOL;	
+	I_bTopBeltLeft			AT %I*: BOOL;	
 	I_bInput11 				AT %I*: BOOL;	// DI 11 - Empty
 	I_bInput12 				AT %I*: BOOL;   // DI 12 - Empty
 	
-	O_bLeftLiftUp 			AT %Q*: BOOL;	// DO 1 - Left Lift up
-	O_bLeftLiftDown 		AT %Q*: BOOL;	// DO 2 - Left Lift down
-	O_bRightLiftDown		AT %Q*: BOOL;	// DO 3 - Right Lift down
-	O_bRightLiftUp			AT %Q*: BOOL;	// DO 4 - Right Lift up
-	O_bRightLiftBeltLeft	AT %Q*: BOOL;	// DO 5 - Lift Right belt left
-	O_bRightLiftBeltRight	AT %Q*: BOOL;	// DO 6 - Lift Right belt right
-	O_bLeftLiftBeltRight	AT %Q*: BOOL;	// DO 7 - Lift Left belt right
-	O_bLeftLiftBeltLeft		AT %Q*: BOOL;	// DO 8 - Lift Left belt left
-	O_bTopBeltLeft			AT %Q*: BOOL;	// DO 9 - Top belt left
-	O_bLowBeltRight			AT %Q*: BOOL;	// DO 10 - Low belt right
-	O_bTopBeltRight			AT %Q*: BOOL;	// DO 11 - Top belt right
-	O_bLowBeltLeft			AT %Q*: BOOL; 	// DO 12 - Low belt left
+	leftLiftUp_OB	AT %Q*: BOOL; 	// DO 1 - Left Lift up
+	leftLiftDown_OB	AT %Q*: BOOL;	// DO 2 - Left Lift down
+	
+	O_bLeftLiftUp 			AT %Q*: BOOL;
+	O_bLeftLiftDown 		AT %Q*: BOOL;
+
+	rightLiftDown_OB		AT %Q*: BOOL;	 // DO 3 - Right Lift down
+	rightLiftUp_OB AT %Q*: BOOL;			// DO 4 - Right Lift up
+	
+	O_bRightLiftDown		AT %Q*: BOOL;	
+	O_bRightLiftUp			AT %Q*: BOOL;	
+	
+	rightLiftBeltLeft_OB 	AT %Q*: BOOL; 	// DO 5 - Lift Right belt left
+	rightLiftBeltRight_OB 	AT %Q*: BOOL;	// DO 6 - Lift Right belt right
+	
+	O_bRightLiftBeltLeft	AT %Q*: BOOL;	
+	O_bRightLiftBeltRight	AT %Q*: BOOL;
+
+	leftLiftBeltRight_OB 	AT %Q*: BOOL;	// DO 7 - Lift Left belt right
+	leftLiftBeltLeft_OB 	AT %Q*: BOOL;	// DO 8 - Lift Left belt left
+	
+	O_bLeftLiftBeltRight	AT %Q*: BOOL;	
+	O_bLeftLiftBeltLeft		AT %Q*: BOOL;	
+	
+	topBeltLeft_OB 	AT %Q*: BOOL;	// DO 9 - Top belt left
+	bottomBeltRight_OB 	AT %Q*: BOOL;	// DO 10 - Low belt right
+	
+	O_bTopBeltLeft 			AT %Q*: BOOL;	
+	O_bLowBeltRight 			AT %Q*: BOOL;
+
+	topBeltRight_OB AT %Q*: BOOL;	// DO 11 - Top belt right
+	lowBeltLeft_OB AT %Q*: BOOL;	// DO 12 - Low belt left
+ 	
+	O_bTopBeltRight			AT %Q*: BOOL;	
+	O_bLowBeltLeft			AT %Q*: BOOL; 	
 	
 	running : BOOL;
 	
