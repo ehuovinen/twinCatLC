@@ -22,14 +22,14 @@
 	I_bLeftLiftDown		AT %I*: BOOL;	
 	I_bLeftLiftUp			AT %I*: BOOL;	
 	
-	bottomBeltRight_IB AT %I*: BOOL;		// DI 7 - Piece on low belt right side
-	topBeltRight_IB AT %I*: BOOL;			// DI 8 - Piece on top belt right side
+	bottomRight_IB AT %I*: BOOL;		// DI 7 - Piece on low belt right side
+	topRight_IB AT %I*: BOOL;			// DI 8 - Piece on top belt right side
 	
 	I_bLowBeltRight			AT %I*: BOOL;	
 	I_bTopBeltRight			AT %I*: BOOL;
 	
-	bottomBeltLeft_IB AT %I*: BOOL;		// DI 9 - Piece on low belt left side
-	topBeltLeft_IB AT %I*: BOOL;		// DI 10 - Piece on top belt left side
+	bottomLeft_IB AT %I*: BOOL;		// DI 9 - Piece on low belt left side
+	topLeft_IB AT %I*: BOOL;		// DI 10 - Piece on top belt left side
 	
 	I_bLowBeltLeft			AT %I*: BOOL;	
 	I_bTopBeltLeft			AT %I*: BOOL;	
@@ -80,6 +80,7 @@
 //Memory
 
 	running : BOOL;
+	trowingObjectOut : BOOL;
 	
 	obj1 : INT;
 	obj2 : INT;
