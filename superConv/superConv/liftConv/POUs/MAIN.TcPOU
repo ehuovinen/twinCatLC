@@ -23,7 +23,7 @@ END_VAR
 //----------------------------------------------------------	
 //object entrance location top righ on lift.
 
-IF I_bPieceRightLift AND I_bRightLiftUp AND NOT T1 THEN
+IF rightLiftOptical_IB AND rightLiftUpPosition_IB AND NOT T1 THEN
 	IF topRightLiftExp = 0 THEN
 		IF obj1 = 0 THEN
 			obj1:=1;
@@ -49,12 +49,12 @@ IF I_bPieceRightLift AND I_bRightLiftUp AND NOT T1 THEN
 			topRightLiftExpArr[1] := 0;					
 	END_IF
 END_IF
-fcT1(IN:=(I_bPieceRightLift AND I_bRightLiftUp), PT:=T#1S, Q=>T1);
+fcT1(IN:=(rightLiftOptical_IB AND rightLiftUpPosition_IB), PT:=T#1S, Q=>T1);
 
 //----------------------------------------------------------
 //object on top right conveyor sensor
 
-IF I_bTopBeltRight AND NOT T2 THEN
+IF topBeltRight_IB  AND NOT T2 THEN
 	IF topRightExp = 0 THEN
 		ERR := 1;
 	ELSE
@@ -68,12 +68,12 @@ IF I_bTopBeltRight AND NOT T2 THEN
 	 	topRightExpArr[5] := 0;		
 	END_IF
 END_IF
-fcT2(IN:=I_bTopBeltRight, PT:=T#300MS, Q=>T2);
+fcT2(IN:=topBeltRight_IB , PT:=T#300MS, Q=>T2);
 
 //----------------------------------------------------------
 //object on top left conveyor sensor
 
-IF I_bTopBeltLeft AND NOT T3 THEN
+IF topBeltLeft_IB AND NOT T3 THEN
 	IF topLeftExp = 0 THEN
 		ERR := 2;
 	ELSE
@@ -87,12 +87,12 @@ IF I_bTopBeltLeft AND NOT T3 THEN
 	 	topLeftExpArr[5] := 0;		
 	END_IF
 END_IF
-fcT3(IN:=I_bTopBeltRight, PT:=T#300MS, Q=>T3);
+fcT3(IN:=topBeltRight_IB , PT:=T#300MS, Q=>T3);
 
 //----------------------------------------------------------
 //object detected on left lift when the lift is up
 
-IF I_bLeftLiftUp AND leftLiftOptical_IbAND NOT T4 THEN
+IF lefttLiftUpPosition_IB AND leftLiftOptical_IB AND NOT T4 THEN
 	IF topLeftLiftExp = 0 THEN
 		ERR := 3;
 	ELSE
@@ -106,12 +106,12 @@ IF I_bLeftLiftUp AND leftLiftOptical_IbAND NOT T4 THEN
 		topLeftLiftExpArr[5] := 0;
 	END_IF
 END_IF
-fcT4(IN:=(I_bLeftLiftUp AND I_bPieceLeftLift), PT:=T#300MS, Q=>T4);
+fcT4(IN:=(lefttLiftUpPosition_IB AND leftLiftOptical_Ib), PT:=T#300MS, Q=>T4);
 
 //----------------------------------------------------------
 //object detected on left lift when the lift is down
 
-IF I_bLeftLiftDown AND leftLiftOptical_Ib AND NOT T4 THEN
+IF leftLiftDownPosition_IB AND leftLiftOptical_IB AND NOT T4 THEN
 	IF topLeftLiftExp = 0 THEN
 		ERR := 3;
 	ELSE
@@ -125,7 +125,7 @@ IF I_bLeftLiftDown AND leftLiftOptical_Ib AND NOT T4 THEN
 		topLeftLiftExpArr[5] := 0;
 	END_IF
 END_IF
-fcT4(IN:=(I_bLeftLiftUp AND I_bPieceLeftLift), PT:=T#300MS, Q=>T4);
+fcT4(IN:=(lefttLiftUpPosition_IB AND leftLiftOptical_IB), PT:=T#300MS, Q=>T4);
 
 
 ELSE
