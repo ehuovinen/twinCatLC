@@ -23,76 +23,6 @@
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
 						<Var>
-							<Name>GVL.I_bPieceLeftLift</Name>
-							<Comment>
-								<![CDATA[ DI 1 - Piece in the left lift]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.I_bPieceRightLift</Name>
-							<Comment>
-								<![CDATA[ DI 2 - Piese in the right lift]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.I_bRightLiftBottom</Name>
-							<Comment>
-								<![CDATA[ DI 3 - Right lift is bottom]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.I_bRightLiftUp</Name>
-							<Comment>
-								<![CDATA[ DI 4 - Right lift is up]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.I_bLeftLiftBottom</Name>
-							<Comment>
-								<![CDATA[ DI 5 - Left lift is down]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.I_bLeftLiftUp</Name>
-							<Comment>
-								<![CDATA[ DI 6 - Left lift is up]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.I_bLowBeltRight</Name>
-							<Comment>
-								<![CDATA[ DI 7 - Piece on low belt right side]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.I_bTopBeltRight</Name>
-							<Comment>
-								<![CDATA[ DI 8 - Piece on top belt right side]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.I_bLowBeltLeft</Name>
-							<Comment>
-								<![CDATA[ DI 9 - Piece on low belt left side]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.I_bTopBeltLeft</Name>
-							<Comment>
-								<![CDATA[ DI 10 - Piece on top belt left side]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
 							<Name>GVL.I_bInput11</Name>
 							<Comment>
 								<![CDATA[ DI 11 - Empty]]>
@@ -106,88 +36,158 @@
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
+						<Var>
+							<Name>GVL.leftLiftOptical_IB</Name>
+							<Comment>
+								<![CDATA[ DI 1 - Piece in the left lift]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.rightLiftOptical_IB</Name>
+							<Comment>
+								<![CDATA[ DI 2 - Piese in the right lift]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.rightLiftDownPosition_IB</Name>
+							<Comment>
+								<![CDATA[ DI 3 - Right lift is bottom]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.rightLiftUpPosition_IB</Name>
+							<Comment>
+								<![CDATA[ DI 4 - Right lift is up]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.leftLiftDownPosition_IB</Name>
+							<Comment>
+								<![CDATA[ DI 5 - Left lift is down]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.lefttLiftUpPosition_IB</Name>
+							<Comment>
+								<![CDATA[ DI 6 - Left lift is up	]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.bottomRight_IB</Name>
+							<Comment>
+								<![CDATA[ DI 7 - Piece on low belt right side]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.topRight_IB</Name>
+							<Comment>
+								<![CDATA[ DI 8 - Piece on top belt right side]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.bottomLeft_IB</Name>
+							<Comment>
+								<![CDATA[ DI 9 - Piece on low belt left side]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.topLeft_IB</Name>
+							<Comment>
+								<![CDATA[ DI 10 - Piece on top belt left side]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
 					</Vars>
 					<Vars VarGrpType="2">
 						<Name>PlcTask Outputs</Name>
 						<Var>
-							<Name>GVL.O_bLeftLiftUp</Name>
+							<Name>GVL.leftLiftUp_OB</Name>
 							<Comment>
 								<![CDATA[ DO 1 - Left Lift up]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bLeftLiftDown</Name>
+							<Name>GVL.leftLiftDown_OB</Name>
 							<Comment>
 								<![CDATA[ DO 2 - Left Lift down]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bRightLiftDown</Name>
+							<Name>GVL.rightLiftDown_OB</Name>
 							<Comment>
 								<![CDATA[ DO 3 - Right Lift down]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bRightLiftUp</Name>
+							<Name>GVL.rightLiftUp_OB</Name>
 							<Comment>
 								<![CDATA[ DO 4 - Right Lift up]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bRightLiftBeltLeft</Name>
+							<Name>GVL.rightLiftBeltLeft_OB</Name>
 							<Comment>
 								<![CDATA[ DO 5 - Lift Right belt left]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bRightLiftBeltRight</Name>
+							<Name>GVL.rightLiftBeltRight_OB</Name>
 							<Comment>
 								<![CDATA[ DO 6 - Lift Right belt right]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bLeftLiftBeltRight</Name>
+							<Name>GVL.leftLiftBeltRight_OB</Name>
 							<Comment>
 								<![CDATA[ DO 7 - Lift Left belt right]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bLeftLiftBeltLeft</Name>
+							<Name>GVL.leftLiftBeltLeft_OB</Name>
 							<Comment>
 								<![CDATA[ DO 8 - Lift Left belt left]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bTopBeltLeft</Name>
+							<Name>GVL.topBeltLeft_OB</Name>
 							<Comment>
 								<![CDATA[ DO 9 - Top belt left]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bLowBeltRight</Name>
+							<Name>GVL.bottomBeltRight_OB</Name>
 							<Comment>
 								<![CDATA[ DO 10 - Low belt right]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bTopBeltRight</Name>
+							<Name>GVL.topBeltRight_OB</Name>
 							<Comment>
 								<![CDATA[ DO 11 - Top belt right]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.O_bLowBeltLeft</Name>
+							<Name>GVL.lowBeltLeft_OB</Name>
 							<Comment>
 								<![CDATA[ DO 12 - Low belt left]]>
 							</Comment>
@@ -788,9 +788,14 @@ Bit1: Value smaller than Limit2]]>
 		</Io>
 	</Project>
 	<Mappings>
+		<MappingInfo Identifier="{00000000-0011-0101-1000-010110000403}" Id="#x03070010"/>
 		<OwnerA Name="TIPC^liftConv^liftConv Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL1008)">
-				<Link VarA="PlcTask Inputs^GVL.I_bInput11" VarB="Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.leftLiftOptical_IB" VarB="Channel 5^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.rightLiftOptical_IB" VarB="Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.rightLiftUpPosition_IB" VarB="Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.topLeft_IB" VarB="Channel 4^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.topRight_IB" VarB="Channel 3^Input"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
