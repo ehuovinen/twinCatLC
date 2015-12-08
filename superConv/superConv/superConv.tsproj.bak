@@ -825,7 +825,7 @@ Bit1: Value smaller than Limit2]]>
 						<BusCoupler ComplexTermSupport="true" NewHardware="true">
 							<Flags SupportVirtualTerms="true"/>
 							<Term Id="2" TermType="#x450" Fieldbus="7">
-								<Name>fgg</Name>
+								<Name>Term 2 (KL1104)</Name>
 								<ImageId>7</ImageId>
 								<Vars VarGrpType="3">
 									<Name>Channel 1</Name>
@@ -1088,41 +1088,29 @@ Bit1: Value smaller than Limit2]]>
 	<Mappings>
 		<MappingInfo Identifier="{00000000-0011-0101-1000-010110000403}" Id="#x03070010"/>
 		<OwnerA Name="TIPC^liftConv^liftConv Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 3 (EL2008)">
-				<Link VarA="PlcTask Outputs^GVL.leftLiftBeltLeft_OB" VarB="Channel 7^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.leftLiftBeltRight_OB" VarB="Channel 6^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.leftLiftDown_OB" VarB="Channel 2^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.leftLiftUp_OB" VarB="Channel 1^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.rightLiftBeltLeft_OB" VarB="Channel 5^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.rightLiftDown_OB" VarB="Channel 3^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.rightLiftUp_OB" VarB="Channel 4^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.topBeltLeft_OB" VarB="Channel 8^Output"/>
-			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 8 (EK1100)^Box 9 (BK1250)">
 				<Link VarA="PlcTask Inputs^GVL.I_bInput11" VarB="Term 4 (KL1104)^Channel 3^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.I_bInput12" VarB="Term 4 (KL1104)^Channel 4^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.bottomLeft_IB" VarB="Term 4 (KL1104)^Channel 1^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.bottomRight_IB" VarB="Term 3 (KL1104)^Channel 3^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.leftLiftDownPosition_IB" VarB="Term 3 (KL1104)^Channel 2^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.leftLiftOptical_IB" VarB="fgg^Channel 1^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.leftLiftUpPosition_IB" VarB="Term 3 (KL1104)^Channel 1^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.rightLiftDownPosition_IB" VarB="fgg^Channel 4^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.rightLiftOptical_IB" VarB="fgg^Channel 2^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.rightLiftUpPosition_IB" VarB="fgg^Channel 3^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.leftLiftDownPosition_IB" VarB="Term 3 (KL1104)^Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.leftLiftOptical_IB" VarB="Term 2 (KL1104)^Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.leftLiftUpPosition_IB" VarB="Term 3 (KL1104)^Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.rightLiftDownPosition_IB" VarB="Term 2 (KL1104)^Channel 4^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.rightLiftOptical_IB" VarB="Term 2 (KL1104)^Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.rightLiftUpPosition_IB" VarB="Term 2 (KL1104)^Channel 3^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.topLeft_IB" VarB="Term 4 (KL1104)^Channel 2^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.topRight_IB" VarB="Term 3 (KL1104)^Channel 4^Input"/>
 				<Link VarA="PlcTask Outputs^GVL.bottomBeltRight_OB" VarB="Term 7 (KL2114)^Channel 2^Output"/>
 				<Link VarA="PlcTask Outputs^GVL.leftLiftBeltLeft_OB" VarB="Term 6 (KL2114)^Channel 4^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.leftLiftBeltRight_OB" VarB="Term 6 (KL2114)^Channel 2^Output"/>
 				<Link VarA="PlcTask Outputs^GVL.leftLiftBeltRight_OB" VarB="Term 6 (KL2114)^Channel 3^Output"/>
 				<Link VarA="PlcTask Outputs^GVL.leftLiftDown_OB" VarB="Term 5 (KL2114)^Channel 2^Output"/>
 				<Link VarA="PlcTask Outputs^GVL.leftLiftUp_OB" VarB="Term 5 (KL2114)^Channel 1^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.lowBeltLeft_OB" VarB="Term 7 (KL2114)^Channel 4^Output"/>
 				<Link VarA="PlcTask Outputs^GVL.rightLiftBeltLeft_OB" VarB="Term 6 (KL2114)^Channel 1^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.rightLiftUp_OB" VarB="Term 5 (KL2114)^Channel 3^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.rightLiftBeltRight_OB" VarB="Term 6 (KL2114)^Channel 2^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.rightLiftDown_OB" VarB="Term 5 (KL2114)^Channel 3^Output"/>
 				<Link VarA="PlcTask Outputs^GVL.rightLiftUp_OB" VarB="Term 5 (KL2114)^Channel 4^Output"/>
 				<Link VarA="PlcTask Outputs^GVL.topBeltLeft_OB" VarB="Term 7 (KL2114)^Channel 1^Output"/>
-				<Link VarA="PlcTask Outputs^GVL.topBeltRight_OB" VarB="Term 7 (KL2114)^Channel 3^Output"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
