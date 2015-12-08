@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4018.2">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4018.5">
   <POU Name="MAIN" Id="{ac688648-09a1-4b3d-950c-242df7ea7e88}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
@@ -22,13 +22,14 @@ VAR
 	goAroundCycles : INT := 2;
 	
 	T8: BOOL;
-	trowObjectOut: BOOL;
+	trowObjectOut: BOOL;	
 END_VAR
 
 VAR_INPUT
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF ERR = 0 THEN
+      <ST><![CDATA[
+IF ERR = 0 THEN
 
 //----------------------------------------------------------	
 //object entrance location top righ on lift.
@@ -107,7 +108,7 @@ fcT3(IN:=topLeft_IB , PT:=T#300MS, Q=>T3);
 //----------------------------------------------------------
 //object detected on left lift when the lift is up
 
-IF lefttLiftUpPosition_IB AND leftLiftOptical_IB AND NOT T4 THEN
+IF leftLiftUpPosition_IB AND leftLiftOptical_IB AND NOT T4 THEN
 	
 	
 	IF topLeftLiftExp = 0 THEN
@@ -124,7 +125,7 @@ IF lefttLiftUpPosition_IB AND leftLiftOptical_IB AND NOT T4 THEN
 		topLeftLiftExpArr[5] := 0;
 	END_IF
 END_IF
-fcT4(IN:=(lefttLiftUpPosition_IB AND leftLiftOptical_Ib), PT:=T#300MS, Q=>T4);
+fcT4(IN:=(leftLiftUpPosition_IB AND leftLiftOptical_Ib), PT:=T#300MS, Q=>T4);
 
 //----------------------------------------------------------
 //object detected on left lift when the lift is down
@@ -191,15 +192,19 @@ IF rightLiftDownPosition_IB AND rightLiftOptical_IB  AND (NOT T7 OR NOT trowingO
 		RETURN;
 	ELSIF (bottomRightLiftExpArr[1] = 1  AND obj1 >= goAroundCycles) THEN
 		obj1 :=0;
+		bottomRightLiftExp := bottomRightLiftExp - 1;
 		trowObjectOut := TRUE;
 	ELSIF (bottomRightLiftExpArr[1] = 2  AND obj2 >= goAroundCycles) THEN
 		obj2 :=0;
+		bottomRightLiftExp := bottomRightLiftExp - 1;
 		trowObjectOut := TRUE;
 	ELSIF (bottomRightLiftExpArr[1] = 3  AND obj3 >= goAroundCycles) THEN
 		obj3 :=0;
+		bottomRightLiftExp := bottomRightLiftExp - 1;
 		trowObjectOut := TRUE;
 	ELSIF (bottomRightLiftExpArr[1] = 4  AND obj4 >= goAroundCycles) THEN
 		obj4 :=0;
+		bottomRightLiftExp := bottomRightLiftExp - 1;
 		trowObjectOut := TRUE;
 	ELSE
 		bottomRightLiftExp := bottomRightLiftExp - 1;
@@ -219,30 +224,79 @@ trowObjectOut := FALSE;
 //----------------------------------------------------------
 //Output control depending on queues and lift positions
 
-IF topRightExp>0  AND topRightLiftExp = 0 AND rightLiftUpPosition_IB THEN
-	topBeltLeft_OB :=TRUE;
-END_IF
-
 IF (topRightExp>0 OR topLeftExp>0) AND topLeftLiftExp = 0 THEN
 	topBeltLeft_OB :=TRUE;
 END_IF
 
-//----------------------------------------------------------
-
-IF topLeftLiftExp > 0 AND bottomLeftLiftExp = 0 AND leftLiftUpPosition_IB  THEN
-	topBeltLeft_OB :=TRUE;
-	leftLiftBeltLeft_OB :=TRUE;
+IF topRightExp>0 AND rightLiftUpPosition_IB AND topBeltLeft_OB THEN
+	rightLiftBeltLeft_OB := TRUE;
+ELSE
+	rightLiftBeltLeft_OB := FALSE;
 END_IF
 
-//----------------------------------------------------------
+IF topLeftLiftExp > 0 AND bottomLeftLiftExp = 0 AND leftLiftUpPosition_IB  THEN
+	leftLiftBeltLeft_OB := TRUE;
+ELSE
+	leftLiftBeltLeft_OB := FALSE;
+END_IF
 
-IF bottomLeftLiftExp > 0 THEN
-	leftLiftBeltLeft_OB :=FALSE;
-	leftLiftUp_OB :=FALSE;
-	leftLiftDown_OB :=TRUE;
-	IF topLeftLiftExp > 0 OR (topLeftExp = 0 AND topRightExp = 0) THEN
-		topBeltLeft_OB :=FALSE;
-	END_IF
+IF bottomLeftLiftExp >1  THEN
+	leftLiftDown_OB := TRUE;
+	leftLiftUp_OB := FALSE;
+END_IF
+
+IF bottomLeftExp > 1 AND bottomRightLiftExp=0 THEN
+	leftLiftBeltLeft_OB := TRUE;
+	bottomBeltRight_OB :=TRUE;
+END_IF
+
+IF bottomLeftExp = 0  AND bottomLeftLiftExp = 0 THEN
+	leftLiftBeltLeft_OB := FALSE;
+	leftLiftUp_OB := TRUE;
+	leftLiftDown_OB := FALSE;
+END_IF
+
+IF bottomRightExp > 0 AND (bottomRightLiftExp=0 AND NOT trowingObjectOut) THEN
+	bottomBeltRight_OB := TRUE;
+END_IF
+
+IF bottomRightLiftExp > 0 AND topRightExp = 0 AND topRightLiftExp = 0 AND rightLiftUpPosition_IB THEN
+	rightLiftDown_OB := TRUE;
+	rightLiftUp_OB := FALSE;
+END_IF
+
+IF bottomRightLiftExp > 0 AND topRightExp = 0 AND rightLiftDownPosition_IB THEN
+	rightLiftBeltRight_OB := TRUE;
+	bottomBeltRight_OB := TRUE;
+END_IF
+
+
+IF topRightLiftExp = 0 AND NOT trowingObjectOut THEN
+	rightLiftBeltRight_OB := FALSE;
+	rightLiftUp_OB :=TRUE;
+	rightLiftDown_OB :=FALSE;
+END_IF
+
+IF topRightLiftExp = 1 THEN
+	rightLiftBeltRight_OB := FALSE;
+	bottomBeltRight_OB :=FALSE;
+	rightLiftUp_OB :=TRUE;
+	rightLiftDown_OB :=FALSE;
+END_IF
+
+IF trowingObjectOut THEN
+	rightLiftBeltRight_OB := TRUE;
+	bottomBeltRight_OB := FALSE;
+END_IF
+
+IF bottomRightLiftExp > 1 AND NOT rightLiftDownPosition_IB THEN
+	bottomBeltRight_OB := FALSE;
+END_IF
+
+IF resetAll THEN
+	reset();
+END_IF
+
 ELSE
 	//error handling
 END_IF

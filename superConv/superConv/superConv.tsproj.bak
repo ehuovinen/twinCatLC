@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4018.13">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4018.16">
 	<ImageDatas>
 		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff0000ff0000ff0000ff0000ff0000ff0000c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c00000c00000c00000c00000c00000c0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c6000000c6c6c60000c0c6c6c6000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c600ffffc6c6c60000c0c6c6c600ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c6c6c6c6c6c6c60000c0c6c6c6c6c6c6808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c6000000c6c6c60000c0c6c6c6000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c6ff0000c6c6c60000c0c6c6c6ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c6c6c6c6c6c6c60000c0c6c6c6c6c6c6808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6000000c6c6c60000c0c6c6c6000000808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c60000ffc6c6c60000c0c6c6c60000ff808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6c6c6c6c6c6c60000c0c6c6c6c6c6c6808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6000000c6c6c60000c0c6c6c6000000808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6c6c6c6c6c6c60000c0c6c6c6c6c6c6808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6008400c6c6c60000c0c6c6c6008400808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6c6c6c6c6c6c60000c0c6c6c6c6c6c6808080ff00ffff00ffff00ff</ImageData>
 	</ImageDatas>
-	<Project ProjectGUID="{001D0C21-7A0F-425F-97B4-19702CD4D700}" TargetNetId="5.29.55.234.1.1">
+	<Project ProjectGUID="{001D0C21-7A0F-425F-97B4-19702CD4D700}" TargetNetId="5.29.55.232.1.1">
 		<System>
 			<Tasks>
 				<Task Id="2" Priority="20" CycleTime="100000" AmsPort="350">
@@ -22,20 +23,6 @@
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
-						<Var>
-							<Name>GVL.I_bInput11</Name>
-							<Comment>
-								<![CDATA[ DI 11 - Empty]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>GVL.I_bInput12</Name>
-							<Comment>
-								<![CDATA[ DI 12 - Empty]]>
-							</Comment>
-							<Type>BOOL</Type>
-						</Var>
 						<Var>
 							<Name>GVL.leftLiftOptical_IB</Name>
 							<Comment>
@@ -72,7 +59,7 @@
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>GVL.lefttLiftUpPosition_IB</Name>
+							<Name>GVL.leftLiftUpPosition_IB</Name>
 							<Comment>
 								<![CDATA[ DI 6 - Left lift is up	]]>
 							</Comment>
@@ -103,6 +90,20 @@
 							<Name>GVL.topLeft_IB</Name>
 							<Comment>
 								<![CDATA[ DI 10 - Piece on top belt left side]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bInput11</Name>
+							<Comment>
+								<![CDATA[ DI 11 - Empty]]>
+							</Comment>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.I_bInput12</Name>
+							<Comment>
+								<![CDATA[ DI 12 - Empty]]>
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
@@ -201,7 +202,7 @@
 			</Project>
 		</Plc>
 		<Io>
-			<Device DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="5.29.55.234.2.1" RemoteName="Device 1 (EtherCAT)" Id="1">
+			<Device DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="5.29.55.232.2.1" RemoteName="Device 1 (EtherCAT)" Id="1">
 				<Name>Device 1 (EtherCAT)</Name>
 				<AddressInfo>
 					<Ccat>
@@ -777,10 +778,307 @@ Bit1: Value smaller than Limit2]]>
 							<CoeProfile ProfileNo="26219401"/>
 						</EtherCAT>
 					</Box>
-					<Box BoxType="9099" Id="8">
-						<Name>Term 8 (EL9011)</Name>
+					<Box BoxType="9099" Id="10">
+						<Name>Term 10 (EL9011)</Name>
 						<ImageId>1004</ImageId>
 						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x01000007"/>
+					</Box>
+				</Box>
+				<Box BoxType="9099" Id="8">
+					<Name>Term 8 (EK1100)</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x02000001"/>
+					<Box BoxType="9081" AmsPort="28928" Id="9">
+						<Name>Box 9 (BK1250)</Name>
+						<ImageId>1005</ImageId>
+						<Vars VarGrpType="1">
+							<Name>Inputs</Name>
+							<Var>
+								<Name>CouplerState</Name>
+								<Comment>
+									<![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]>
+								</Comment>
+								<Type>UINT</Type>
+								<BitOffs>312</BitOffs>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="2">
+							<Name>Outputs</Name>
+							<Var>
+								<Name>CouplerCtrl</Name>
+								<Comment>
+									<![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]>
+								</Comment>
+								<Type>UINT</Type>
+								<BitOffs>312</BitOffs>
+							</Var>
+						</Vars>
+						<BusCoupler ComplexTermSupport="true" NewHardware="true">
+							<Flags SupportVirtualTerms="true"/>
+							<Term Id="2" TermType="#x450" Fieldbus="7">
+								<Name>fgg</Name>
+								<ImageId>7</ImageId>
+								<Vars VarGrpType="3">
+									<Name>Channel 1</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>328</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 2</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>329</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 3</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>330</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 4</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>331</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+							</Term>
+							<Term Id="3" TermType="#x450" Fieldbus="7">
+								<Name>Term 3 (KL1104)</Name>
+								<ImageId>7</ImageId>
+								<Vars VarGrpType="3">
+									<Name>Channel 1</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>332</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 2</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>333</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 3</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>334</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 4</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>335</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+							</Term>
+							<Term Id="4" TermType="#x450" Fieldbus="7">
+								<Name>Term 4 (KL1104)</Name>
+								<ImageId>7</ImageId>
+								<Vars VarGrpType="3">
+									<Name>Channel 1</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>336</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 2</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>337</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 3</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>338</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 4</Name>
+									<Var>
+										<Name>Input</Name>
+										<Type>BIT</Type>
+										<BitOffs>339</BitOffs>
+										<InOut>0</InOut>
+									</Var>
+								</Vars>
+							</Term>
+							<Term Id="5" TermType="#x842" Fieldbus="7">
+								<Name>Term 5 (KL2114)</Name>
+								<ImageId>31</ImageId>
+								<Vars VarGrpType="3">
+									<Name>Channel 1</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>328</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 2</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>329</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 3</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>330</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 4</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>331</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+							</Term>
+							<Term Id="6" TermType="#x842" Fieldbus="7">
+								<Name>Term 6 (KL2114)</Name>
+								<ImageId>31</ImageId>
+								<Vars VarGrpType="3">
+									<Name>Channel 1</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>332</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 2</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>333</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 3</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>334</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 4</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>335</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+							</Term>
+							<Term Id="7" TermType="#x842" Fieldbus="7">
+								<Name>Term 7 (KL2114)</Name>
+								<ImageId>31</ImageId>
+								<Vars VarGrpType="3">
+									<Name>Channel 1</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>336</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 2</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>337</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 3</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>338</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+								<Vars VarGrpType="3">
+									<Name>Channel 4</Name>
+									<Var>
+										<Name>Output</Name>
+										<Type>BIT</Type>
+										<BitOffs>339</BitOffs>
+										<InOut>1</InOut>
+									</Var>
+								</Vars>
+							</Term>
+							<Term Id="1" TermType="#x2332" Fieldbus="7">
+								<Name>End Term (KL9010)</Name>
+								<ImageId>32</ImageId>
+							</Term>
+						</BusCoupler>
+						<EtherCAT SlaveType="3" AdsServerAddress="051d37e8020af103" PdiType="#x0008" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04e22c22" RevisionNo="#x00120000" InfoDataAddr="true" InfoDataNetId="true" TimeoutStateChange1="5000" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="3" PortABoxInfo="#x01000008">
+							<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+							<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+							<SyncMan>001004006400010003000000000000000000001064010000</SyncMan>
+							<SyncMan>001604000000010004000000000000000000001600010000</SyncMan>
+							<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+							<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010140200181402</BootStrapData>
+						</EtherCAT>
 					</Box>
 				</Box>
 				<EtherCAT/>
@@ -790,12 +1088,41 @@ Bit1: Value smaller than Limit2]]>
 	<Mappings>
 		<MappingInfo Identifier="{00000000-0011-0101-1000-010110000403}" Id="#x03070010"/>
 		<OwnerA Name="TIPC^liftConv^liftConv Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL1008)">
-				<Link VarA="PlcTask Inputs^GVL.leftLiftOptical_IB" VarB="Channel 5^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.rightLiftOptical_IB" VarB="Channel 2^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.rightLiftUpPosition_IB" VarB="Channel 1^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.topLeft_IB" VarB="Channel 4^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.topRight_IB" VarB="Channel 3^Input"/>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 3 (EL2008)">
+				<Link VarA="PlcTask Outputs^GVL.leftLiftBeltLeft_OB" VarB="Channel 7^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.leftLiftBeltRight_OB" VarB="Channel 6^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.leftLiftDown_OB" VarB="Channel 2^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.leftLiftUp_OB" VarB="Channel 1^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.rightLiftBeltLeft_OB" VarB="Channel 5^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.rightLiftDown_OB" VarB="Channel 3^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.rightLiftUp_OB" VarB="Channel 4^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.topBeltLeft_OB" VarB="Channel 8^Output"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 8 (EK1100)^Box 9 (BK1250)">
+				<Link VarA="PlcTask Inputs^GVL.I_bInput11" VarB="Term 4 (KL1104)^Channel 3^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.I_bInput12" VarB="Term 4 (KL1104)^Channel 4^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.bottomLeft_IB" VarB="Term 4 (KL1104)^Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.bottomRight_IB" VarB="Term 3 (KL1104)^Channel 3^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.leftLiftDownPosition_IB" VarB="Term 3 (KL1104)^Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.leftLiftOptical_IB" VarB="fgg^Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.leftLiftUpPosition_IB" VarB="Term 3 (KL1104)^Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.rightLiftDownPosition_IB" VarB="fgg^Channel 4^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.rightLiftOptical_IB" VarB="fgg^Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.rightLiftUpPosition_IB" VarB="fgg^Channel 3^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.topLeft_IB" VarB="Term 4 (KL1104)^Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.topRight_IB" VarB="Term 3 (KL1104)^Channel 4^Input"/>
+				<Link VarA="PlcTask Outputs^GVL.bottomBeltRight_OB" VarB="Term 7 (KL2114)^Channel 2^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.leftLiftBeltLeft_OB" VarB="Term 6 (KL2114)^Channel 4^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.leftLiftBeltRight_OB" VarB="Term 6 (KL2114)^Channel 2^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.leftLiftBeltRight_OB" VarB="Term 6 (KL2114)^Channel 3^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.leftLiftDown_OB" VarB="Term 5 (KL2114)^Channel 2^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.leftLiftUp_OB" VarB="Term 5 (KL2114)^Channel 1^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.lowBeltLeft_OB" VarB="Term 7 (KL2114)^Channel 4^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.rightLiftBeltLeft_OB" VarB="Term 6 (KL2114)^Channel 1^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.rightLiftUp_OB" VarB="Term 5 (KL2114)^Channel 3^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.rightLiftUp_OB" VarB="Term 5 (KL2114)^Channel 4^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.topBeltLeft_OB" VarB="Term 7 (KL2114)^Channel 1^Output"/>
+				<Link VarA="PlcTask Outputs^GVL.topBeltRight_OB" VarB="Term 7 (KL2114)^Channel 3^Output"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

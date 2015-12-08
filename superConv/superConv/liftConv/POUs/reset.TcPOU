@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4018.5">
+  <POU Name="reset" Id="{1e3483fc-4a73-4057-8c56-b8e60f01c1e9}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION reset : int
+VAR_INPUT
+END_VAR
+VAR
+	i: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[FOR i:=1 TO 5 BY 1 DO
+	topRightLiftExpArr[i] := 0;
+END_FOR
+	topRightLiftExp := 0;
+	
+FOR i:=1 TO 5 BY 1 DO
+	topRightExpArr[i] := 0;
+END_FOR
+	topRightExp := 0;
+	
+FOR i:=1 TO 5 BY 1 DO
+	topLeftExpArr[i] := 0;
+END_FOR
+	topLeftExp := 0;
+	
+
+FOR i:=1 TO 5 BY 1 DO
+	topLeftLiftExpArr[i] := 0;
+END_FOR
+	topLeftLiftExp := 0;
+	
+FOR i:=1 TO 5 BY 1 DO
+	bottomLeftLiftExpArr[i] := 0;
+END_FOR
+	bottomLeftLiftExp := 0;
+	
+FOR i:=1 TO 5 BY 1 DO
+	bottomLeftExpArr[i] := 0;
+END_FOR
+	bottomLeftExp := 0;
+	
+FOR i:=1 TO 5 BY 1 DO
+	bottomRightExpArr[i] := 0;
+END_FOR
+	bottomRightExp := 0;
+	
+FOR i:=1 TO 5 BY 1 DO
+	bottomRightLiftExpArr[i] := 0;
+END_FOR
+	bottomRightLiftExp := 0;
+
+trowingObjectOut := 0;
+	leftLiftUp_OB := 0;
+	leftLiftDown_OB := 0;
+	rightLiftDown_OB := 0;
+	rightLiftUp_OB := 0;
+	rightLiftBeltLeft_OB := 0;
+	rightLiftBeltRight_OB := 0;
+	leftLiftBeltRight_OB := 0;
+	leftLiftBeltLeft_OB  := 0;
+	topBeltLeft_OB  := 0;
+	bottomBeltRight_OB := 0;
+	topBeltRight_OB := 0;
+	lowBeltLeft_OB := 0;
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
