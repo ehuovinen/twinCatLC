@@ -63,8 +63,12 @@ trowingObjectOut := 0;
 	bottomBeltRight_OB := 0;
 	topBeltRight_OB := 0;
 	lowBeltLeft_OB := 0;
-
-]]></ST>
+	obj1 := 0;
+	obj2 := 0;
+	obj3 := 0;
+	obj4 := 0;
+	ERR := 0;
+	resetAll := False;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

@@ -16,6 +16,11 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"32"</v>
+              <v n="TextDefault">"exp on bottomLeft %d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"22"</v>
               <v n="TextDefault">"exp on bottomLeft%d"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -26,8 +31,18 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"33"</v>
+              <v n="TextDefault">"exp on bottomRight %d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"23"</v>
               <v n="TextDefault">"exp on bottomRight%d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"35"</v>
+              <v n="TextDefault">"exp on bottomRightLift %d"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -36,8 +51,23 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"34"</v>
+              <v n="TextDefault">"exp on bottomRightLiftd"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"37"</v>
+              <v n="TextDefault">"exp on topLeft %d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"19"</v>
               <v n="TextDefault">"exp on topLeft%d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"36"</v>
+              <v n="TextDefault">"exp on topLeftLift  %d"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

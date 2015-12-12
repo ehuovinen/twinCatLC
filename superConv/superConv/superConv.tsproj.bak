@@ -107,6 +107,26 @@
 							</Comment>
 							<Type>BOOL</Type>
 						</Var>
+						<Var>
+							<Name>GVL.b1</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.b2</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.b3</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.b4</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>GVL.b5</Name>
+							<Type>BOOL</Type>
+						</Var>
 					</Vars>
 					<Vars VarGrpType="2">
 						<Name>PlcTask Outputs</Name>
@@ -1088,14 +1108,21 @@ Bit1: Value smaller than Limit2]]>
 	<Mappings>
 		<MappingInfo Identifier="{00000000-0011-0101-1000-010110000403}" Id="#x03070010"/>
 		<OwnerA Name="TIPC^liftConv^liftConv Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL.b1" VarB="Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.b2" VarB="Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.b3" VarB="Channel 3^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.b4" VarB="Channel 4^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.b5" VarB="Channel 5^Input"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 8 (EK1100)^Box 9 (BK1250)">
 				<Link VarA="PlcTask Inputs^GVL.I_bInput11" VarB="Term 4 (KL1104)^Channel 3^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.I_bInput12" VarB="Term 4 (KL1104)^Channel 4^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.bottomLeft_IB" VarB="Term 4 (KL1104)^Channel 1^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.bottomRight_IB" VarB="Term 3 (KL1104)^Channel 3^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.leftLiftDownPosition_IB" VarB="Term 3 (KL1104)^Channel 1^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.leftLiftDownPosition_IB" VarB="Term 3 (KL1104)^Channel 2^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.leftLiftOptical_IB" VarB="Term 2 (KL1104)^Channel 1^Input"/>
-				<Link VarA="PlcTask Inputs^GVL.leftLiftUpPosition_IB" VarB="Term 3 (KL1104)^Channel 2^Input"/>
+				<Link VarA="PlcTask Inputs^GVL.leftLiftUpPosition_IB" VarB="Term 3 (KL1104)^Channel 1^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.rightLiftDownPosition_IB" VarB="Term 2 (KL1104)^Channel 4^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.rightLiftOptical_IB" VarB="Term 2 (KL1104)^Channel 2^Input"/>
 				<Link VarA="PlcTask Inputs^GVL.rightLiftUpPosition_IB" VarB="Term 2 (KL1104)^Channel 3^Input"/>

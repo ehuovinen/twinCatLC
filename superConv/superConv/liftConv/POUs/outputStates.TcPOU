@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4018.5">
+  <POU Name="outputStates" Id="{59224dfc-4699-4a28-8716-cf5ad5998d68}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION outputStates : int
+VAR_INPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+//----------------------------------------------------------
+//Output control depending on queues and lift positions
+
+IF (topRightExp>0 OR topLeftExp>0) AND topLeftLiftExp = 0 THEN
+	topBeltLeft_OB :=TRUE;
+END_IF
+
+IF topRightExp>0 AND rightLiftUpPosition_IB AND topBeltLeft_OB THEN
+	rightLiftBeltLeft_OB := TRUE;
+ELSE
+	rightLiftBeltLeft_OB := FALSE;
+END_IF
+
+IF topLeftLiftExp > 0 AND bottomLeftLiftExp = 0 AND leftLiftUpPosition_IB  THEN
+	leftLiftBeltLeft_OB := TRUE;
+ELSE
+	leftLiftBeltLeft_OB := FALSE;
+END_IF
+
+IF bottomLeftLiftExp >1  THEN
+	leftLiftDown_OB := TRUE;
+	leftLiftUp_OB := FALSE;
+END_IF
+
+IF bottomLeftExp > 1 AND bottomRightLiftExp=0 THEN
+	leftLiftBeltLeft_OB := TRUE;
+	bottomBeltRight_OB :=TRUE;
+END_IF
+
+IF bottomLeftExp = 0  AND bottomLeftLiftExp = 0 THEN
+	leftLiftBeltLeft_OB := FALSE;
+	leftLiftUp_OB := TRUE;
+	leftLiftDown_OB := FALSE;
+END_IF
+
+IF bottomRightExp > 0 AND (bottomRightLiftExp=0 AND NOT trowingObjectOut) THEN
+	bottomBeltRight_OB := TRUE;
+END_IF
+
+IF bottomRightLiftExp > 0 AND topRightExp = 0 AND topRightLiftExp = 0 AND rightLiftUpPosition_IB THEN
+	rightLiftDown_OB := TRUE;
+	rightLiftUp_OB := FALSE;
+END_IF
+
+IF bottomRightLiftExp > 0 AND topRightExp = 0 AND rightLiftDownPosition_IB THEN
+	rightLiftBeltRight_OB := TRUE;
+	bottomBeltRight_OB := TRUE;
+END_IF
+
+IF topRightLiftExp = 0 AND NOT trowingObjectOut THEN
+	rightLiftBeltRight_OB := FALSE;
+	rightLiftUp_OB :=TRUE;
+	rightLiftDown_OB :=FALSE;
+END_IF
+
+IF topRightLiftExp = 1 THEN
+	rightLiftBeltRight_OB := FALSE;
+	bottomBeltRight_OB :=FALSE;
+	rightLiftUp_OB :=TRUE;
+	rightLiftDown_OB :=FALSE;
+END_IF
+
+IF trowingObjectOut THEN
+	rightLiftBeltRight_OB := TRUE;
+	bottomBeltRight_OB := FALSE;
+END_IF
+
+IF bottomRightLiftExp > 1 AND NOT rightLiftDownPosition_IB THEN
+	bottomBeltRight_OB := FALSE;
+END_IF
+
+IF resetAll THEN
+	reset();
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

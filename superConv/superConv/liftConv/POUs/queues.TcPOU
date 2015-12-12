@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4018.5">
-  <POU Name="MAIN" Id="{ac688648-09a1-4b3d-950c-242df7ea7e88}" SpecialFunc="None">
-    <Declaration><![CDATA[PROGRAM MAIN
+  <POU Name="queues" Id="{fcc6deef-5867-422b-8dc6-cb3569a5a02a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION queues  : INT
+VAR_INPUT
+END_VAR
 VAR
 	fcT1: TOF;
 	fcT2: TOF;
@@ -11,7 +13,7 @@ VAR
 	fcT6: TOF;
 	fcT7: TOF;
 	fcT8: TOF;
-	onDelayT9 : TON;
+	fcT9 : TOF;
 	
 	T1: BOOL;
 	T2: BOOL;
@@ -21,16 +23,12 @@ VAR
 	T6: BOOL;
 	T7: BOOL;
 	T8: BOOL;
-	T9: BOOL;
 	
 	goAroundCycles : INT := 2;
 	trowObjectOut: BOOL;
 	
-	myvar: INT;
 END_VAR
-
-VAR_INPUT
-END_VAR]]></Declaration>
+]]></Declaration>
     <Implementation>
       <ST><![CDATA[
 IF ERR = 0 THEN
@@ -112,9 +110,9 @@ fcT3(IN:=topLeft_IB , PT:=T#300MS, Q=>T3);
 //----------------------------------------------------------
 //object detected on left lift when the lift is up
 
-fcT4(IN:=(leftLiftUpPosition_IB AND leftLiftOptical_Ib), PT:=T#100MS, Q=>T4);
-onDelayT9( IN:= T4,  PT:= T#2S, Q => T9);
-IF T9 THEN
+IF leftLiftUpPosition_IB AND leftLiftOptical_IB AND NOT T4 THEN
+	
+	
 	IF topLeftLiftExp = 0 THEN
 		ERR := 3;
 		RETURN;
@@ -129,7 +127,7 @@ IF T9 THEN
 		topLeftLiftExpArr[5] := 0;
 	END_IF
 END_IF
-
+fcT4(IN:=(leftLiftUpPosition_IB AND leftLiftOptical_Ib), PT:=T#300MS, Q=>T4);
 
 //----------------------------------------------------------
 //object detected on left lift when the lift is down
@@ -190,7 +188,7 @@ fcT6(IN:= bottomRight_IB, PT:=T#300MS, Q=>T6);
 //----------------------------------------------------------
 //object detected on right lift sensor when the lift is down
 
-IF rightLiftDownPosition_IB AND rightLiftOptical_IB  AND NOT  (T7 OR trowingObjectOut) THEN
+IF rightLiftDownPosition_IB AND rightLiftOptical_IB  AND (NOT T7 OR NOT trowingObjectOut) THEN
 	IF bottomRightLiftExp = 0 THEN
 		ERR := 7;
 		RETURN;
@@ -228,16 +226,6 @@ trowObjectOut := FALSE;
 ELSE
 	//error handling
 END_IF
-
-//queues();
-
-outputFBD();
-IF resetAll OR b5 THEN
-	reset();
-END_IF
-
-
-
 ]]></ST>
     </Implementation>
   </POU>

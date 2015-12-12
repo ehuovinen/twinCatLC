@@ -37,6 +37,11 @@
 	I_bInput11 				AT %I*: BOOL;	// DI 11 - Empty
 	I_bInput12 				AT %I*: BOOL;   // DI 12 - Empty
 
+	b1 AT %I*: BOOL;
+	b2 AT %I*: BOOL;
+	b3 AT %I*: BOOL;
+	b4 AT %I*: BOOL;
+	b5 AT %I*: BOOL;
 //----------------------------------------------------------
 //Outputs
 	
@@ -74,7 +79,10 @@
 	lowBeltLeft_OB AT %Q*: BOOL;	// DO 12 - Low belt left
  	
 //	O_bTopBeltRight			AT %Q*: BOOL;	
-//	O_bLowBeltLeft			AT %Q*: BOOL; 	
+//	O_bLowBeltLeft			AT %Q*: BOOL; 
+
+
+
 
 //----------------------------------------------------------
 //Memory
