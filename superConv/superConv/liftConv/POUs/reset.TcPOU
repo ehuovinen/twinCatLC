@@ -11,64 +11,41 @@ END_VAR
     <Implementation>
       <ST><![CDATA[FOR i:=1 TO 5 BY 1 DO
 	topRightLiftExpArr[i] := 0;
-END_FOR
-	topRightLiftExp := 0;
-	
-FOR i:=1 TO 5 BY 1 DO
 	topRightExpArr[i] := 0;
-END_FOR
-	topRightExp := 0;
-	
-FOR i:=1 TO 5 BY 1 DO
 	topLeftExpArr[i] := 0;
-END_FOR
-	topLeftExp := 0;
-	
-
-FOR i:=1 TO 5 BY 1 DO
 	topLeftLiftExpArr[i] := 0;
-END_FOR
-	topLeftLiftExp := 0;
-	
-FOR i:=1 TO 5 BY 1 DO
 	bottomLeftLiftExpArr[i] := 0;
-END_FOR
-	bottomLeftLiftExp := 0;
-	
-FOR i:=1 TO 5 BY 1 DO
 	bottomLeftExpArr[i] := 0;
-END_FOR
-	bottomLeftExp := 0;
-	
-FOR i:=1 TO 5 BY 1 DO
 	bottomRightExpArr[i] := 0;
-END_FOR
-	bottomRightExp := 0;
-	
-FOR i:=1 TO 5 BY 1 DO
 	bottomRightLiftExpArr[i] := 0;
+	obj[i] := 0;
 END_FOR
-	bottomRightLiftExp := 0;
+
+topRightLiftExp := 0;
+topRightExp := 0;
+topLeftExp := 0;
+topLeftLiftExp := 0;
+bottomLeftLiftExp := 0;
+bottomLeftExp := 0;
+bottomRightExp := 0;
+bottomRightLiftExp := 0;
+
 
 trowingObjectOut := 0;
-	leftLiftUp_OB := 0;
-	leftLiftDown_OB := 0;
-	rightLiftDown_OB := 0;
-	rightLiftUp_OB := 0;
-	rightLiftBeltLeft_OB := 0;
-	rightLiftBeltRight_OB := 0;
-	leftLiftBeltRight_OB := 0;
-	leftLiftBeltLeft_OB  := 0;
-	topBeltLeft_OB  := 0;
-	bottomBeltRight_OB := 0;
-	topBeltRight_OB := 0;
-	lowBeltLeft_OB := 0;
-	obj1 := 0;
-	obj2 := 0;
-	obj3 := 0;
-	obj4 := 0;
-	ERR := 0;
-	resetAll := False;]]></ST>
+leftLiftUp_OB := 0;
+leftLiftDown_OB := 0;
+rightLiftDown_OB := 0;
+rightLiftUp_OB := 0;
+rightLiftBeltLeft_OB := 0;
+rightLiftBeltRight_OB := 0;
+leftLiftBeltRight_OB := 0;
+leftLiftBeltLeft_OB  := 0;
+topBeltLeft_OB  := 0;
+bottomBeltRight_OB := 0;
+topBeltRight_OB := 0;
+lowBeltLeft_OB := 0;
+ERR := 0;
+resetAll := FALSE;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

@@ -96,6 +96,8 @@
 	obj2 : INT;
 	obj3 : INT;
 	obj4 : INT;	
+	obj : ARRAY[1..5] OF INT;
+
 	
 	topRightLiftExp : INT;
 	topRightLiftExpArr : ARRAY[1..5] OF INT;
@@ -115,6 +117,9 @@
 	bottomRightLiftExpArr : ARRAY[1..5] OF INT;
 	
 	ERR: INT;
+	resetError: BOOL;
+	auto: BOOL;
+	textMA : WSTRING;	
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4018.5">
+  <POU Name="resetOutputs" Id="{04c278b7-5810-4dcb-ae75-4845d2ca01f2}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION resetOutputs : int
+VAR_INPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[trowingObjectOut := 0;
+leftLiftUp_OB := 0;
+leftLiftDown_OB := 0;
+rightLiftDown_OB := 0;
+rightLiftUp_OB := 0;
+rightLiftBeltLeft_OB := 0;
+rightLiftBeltRight_OB := 0;
+leftLiftBeltRight_OB := 0;
+leftLiftBeltLeft_OB  := 0;
+topBeltLeft_OB  := 0;
+bottomBeltRight_OB := 0;
+topBeltRight_OB := 0;
+lowBeltLeft_OB := 0;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
