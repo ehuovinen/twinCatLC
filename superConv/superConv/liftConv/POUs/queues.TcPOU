@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4018.5">
-  <POU Name="queues" Id="{fcc6deef-5867-422b-8dc6-cb3569a5a02a}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION queues  : INT
+  <POU Name="Queues" Id="{b652f3b4-cd7b-4052-8cce-340c0c081f87}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK Queues
 VAR_INPUT
+END_VAR
+VAR_OUTPUT
 END_VAR
 VAR
 	fcT1: TOF;
@@ -13,7 +15,8 @@ VAR
 	fcT6: TOF;
 	fcT7: TOF;
 	fcT8: TOF;
-	fcT9 : TOF;
+	onDelayT9 : TON;
+	onDelayT10 : TON;
 	
 	T1: BOOL;
 	T2: BOOL;
@@ -23,47 +26,49 @@ VAR
 	T6: BOOL;
 	T7: BOOL;
 	T8: BOOL;
-	
+	T9: BOOL;
+	T10: BOOL;
+
 	goAroundCycles : INT := 2;
 	trowObjectOut: BOOL;
-	
+
+	T9c2: BOOL;
+	T10c2: BOOL;
+
+	assigned: BOOL; //these are used in first paragraph
+	i: INT;
+
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[
-IF ERR = 0 THEN
-
-//----------------------------------------------------------	
+      <ST><![CDATA[//----------------------------------------------------------	
 //object entrance location top righ on lift.
 
 IF rightLiftOptical_IB AND rightLiftUpPosition_IB AND NOT T1 THEN
 	IF topRightLiftExp = 0 THEN
-		IF obj1 = 0 THEN
-			obj1:=1;
-			topRightExp :=topRightExp+1;
-			topRightExpArr[topRightExp]:=1;
-		ELSIF obj2 = 0 THEN
-			obj2:=1;
-			topRightExp :=topRightExp+1;
-			topRightExpArr[topRightExp]:=2;
-		ELSIF obj3 = 0 THEN
-			obj3:=1;
-			topRightExp :=topRightExp+1;
-			topRightExpArr[topRightExp]:=3;
-		ELSIF obj4 = 0 THEN
-			obj4:=1;
-			topRightExp :=topRightExp+1;
-			topRightExpArr[topRightExp]:=4;
-		ELSE
+		assigned := FALSE;
+		i := 1;
+		WHILE i<5 AND NOT assigned DO
+			IF obj[i] = 0 THEN
+				obj[i] := 1;
+				assigned := TRUE;
+			ELSE
+				i := i + 1;
+			END_IF
+		END_WHILE
+		IF NOT assigned THEN
 			ERR:=8;
 			RETURN;
 		END_IF
+		topRightExp := topRightExp+1;
+		topRightExpArr[topRightExp]:= i;
 	ELSE
 			topRightExp := topRightExp+1;
 			topRightExpArr[topRightExp]:= topRightLiftExpArr[1];
 			topRightLiftExp := 0;
 			topRightLiftExpArr[1] := 0;					
 	END_IF
+
 END_IF
 fcT1(IN:=(rightLiftOptical_IB AND rightLiftUpPosition_IB), PT:=T#1S, Q=>T1);
 
@@ -82,7 +87,7 @@ IF topRight_IB  AND NOT T2 THEN
 		topRightExpArr[2] := topRightExpArr[3];
 		topRightExpArr[3] := topRightExpArr[4];
 		topRightExpArr[4] := topRightExpArr[5];
-	 	topRightExpArr[5] := 0;		
+		topRightExpArr[5] := 0;		
 	END_IF
 END_IF
 fcT2(IN:=topRight_IB , PT:=T#300MS, Q=>T2);
@@ -102,7 +107,7 @@ IF topLeft_IB AND NOT T3 THEN
 		topLeftExpArr[2] := topLeftExpArr[3];
 		topLeftExpArr[3] := topLeftExpArr[4];
 		topLeftExpArr[4] := topLeftExpArr[5];
-	 	topLeftExpArr[5] := 0;		
+		topLeftExpArr[5] := 0;		
 	END_IF
 END_IF
 fcT3(IN:=topLeft_IB , PT:=T#300MS, Q=>T3);
@@ -110,9 +115,9 @@ fcT3(IN:=topLeft_IB , PT:=T#300MS, Q=>T3);
 //----------------------------------------------------------
 //object detected on left lift when the lift is up
 
-IF leftLiftUpPosition_IB AND leftLiftOptical_IB AND NOT T4 THEN
-	
-	
+fcT4(IN:=(leftLiftUpPosition_IB AND leftLiftOptical_Ib), PT:=T#100MS, Q=>T4);
+onDelayT9( IN:= T4,  PT:= T#2300MS, Q => T9);
+IF T9 AND NOT T9c2 THEN
 	IF topLeftLiftExp = 0 THEN
 		ERR := 3;
 		RETURN;
@@ -127,7 +132,7 @@ IF leftLiftUpPosition_IB AND leftLiftOptical_IB AND NOT T4 THEN
 		topLeftLiftExpArr[5] := 0;
 	END_IF
 END_IF
-fcT4(IN:=(leftLiftUpPosition_IB AND leftLiftOptical_Ib), PT:=T#300MS, Q=>T4);
+T9c2 := T9;
 
 //----------------------------------------------------------
 //object detected on left lift when the lift is down
@@ -155,7 +160,7 @@ IF bottomLeft_IB AND NOT T5 THEN
 	ELSE
 		bottomLeftExp := bottomLeftExp - 1;
 		bottomRightExp := bottomRightExp +1;
-		bottomRightExpArr[bottomLeftExp] := bottomLeftExpArr[1];
+		bottomRightExpArr[bottomRightExp] := bottomLeftExpArr[1];
 		bottomLeftExpArr[1] := bottomLeftExpArr[2];
 		bottomLeftExpArr[2] := bottomLeftExpArr[3];
 		bottomLeftExpArr[3] := bottomLeftExpArr[4];
@@ -188,45 +193,34 @@ fcT6(IN:= bottomRight_IB, PT:=T#300MS, Q=>T6);
 //----------------------------------------------------------
 //object detected on right lift sensor when the lift is down
 
-IF rightLiftDownPosition_IB AND rightLiftOptical_IB  AND (NOT T7 OR NOT trowingObjectOut) THEN
+
+fcT7(IN:=(rightLiftDownPosition_IB AND rightLiftOptical_IB), PT:=T#100MS, Q=>T7);
+onDelayT10(IN:= T7, PT:=T#2300MS, Q=>T10);
+IF (T10 AND NOT T10c2) AND NOT trowingObjectOut THEN
 	IF bottomRightLiftExp = 0 THEN
 		ERR := 7;
 		RETURN;
-	ELSIF (bottomRightLiftExpArr[1] = 1  AND obj1 >= goAroundCycles) THEN
-		obj1 :=0;
-		bottomRightLiftExp := bottomRightLiftExp - 1;
-		trowObjectOut := TRUE;
-	ELSIF (bottomRightLiftExpArr[1] = 2  AND obj2 >= goAroundCycles) THEN
-		obj2 :=0;
-		bottomRightLiftExp := bottomRightLiftExp - 1;
-		trowObjectOut := TRUE;
-	ELSIF (bottomRightLiftExpArr[1] = 3  AND obj3 >= goAroundCycles) THEN
-		obj3 :=0;
-		bottomRightLiftExp := bottomRightLiftExp - 1;
-		trowObjectOut := TRUE;
-	ELSIF (bottomRightLiftExpArr[1] = 4  AND obj4 >= goAroundCycles) THEN
-		obj4 :=0;
-		bottomRightLiftExp := bottomRightLiftExp - 1;
-		trowObjectOut := TRUE;
 	ELSE
 		bottomRightLiftExp := bottomRightLiftExp - 1;
-		topRightLiftExp := topRightLiftExp +1;
-		topRightLiftExpArr[topRightLiftExp] := bottomRightLiftExpArr[1];
+		IF obj[bottomRightLiftExpArr[1]] >= goAroundCycles THEN
+			obj[bottomRightLiftExpArr[1]] :=0;
+			trowObjectOut := TRUE;
+		ELSE
+			obj[bottomRightLiftExpArr[1]] :=1+obj[bottomRightLiftExpArr[1]];
+			topRightLiftExp := topRightLiftExp +1;
+			topRightLiftExpArr[topRightLiftExp] := bottomRightLiftExpArr[1];
+		END_IF
 		bottomRightLiftExpArr[1] := bottomRightLiftExpArr[2];
 		bottomRightLiftExpArr[2] := bottomRightLiftExpArr[3];
 		bottomRightLiftExpArr[3] := bottomRightLiftExpArr[4];
 		bottomRightLiftExpArr[4] := bottomRightLiftExpArr[5];
 		bottomRightLiftExpArr[5] := 0;
-	END_IF
-END_IF
-fcT7(IN:=(rightLiftDownPosition_IB AND rightLiftOptical_IB), PT:=T#300MS, Q=>T7);
-fcT8(IN:=trowObjectOut, PT:=T#4S, Q=>TrowingObjectOut);
-trowObjectOut := FALSE;
+	END_IF		
 
-ELSE
-	//error handling
 END_IF
-]]></ST>
+T10c2 := T10;
+fcT8(IN:=trowObjectOut, PT:=T#4S, Q=>TrowingObjectOut);
+trowObjectOut := FALSE;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

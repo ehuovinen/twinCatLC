@@ -3,40 +3,9 @@
   <POU Name="MAIN" Id="{ac688648-09a1-4b3d-950c-242df7ea7e88}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	fcT1: TOF;
-	fcT2: TOF;
-	fcT3: TOF;
-	fcT4: TOF;
-	fcT5: TOF;
-	fcT6: TOF;
-	fcT7: TOF;
-	fcT8: TOF;
-	onDelayT9 : TON;
-	onDelayT10 : TON;
-	
-	T1: BOOL;
-	T2: BOOL;
-	T3: BOOL;
-	T4: BOOL;
-	T5: BOOL;
-	T6: BOOL;
-	T7: BOOL;
-	T8: BOOL;
-	T9: BOOL;
-	T10: BOOL;
-
-	
-	goAroundCycles : INT := 2;
-	trowObjectOut: BOOL;
-	
-	myvar: INT;
-	T9c2: BOOL;
-	T10c2: BOOL;
-	i: INT;
-	
-	assigned: BOOL;
+	queues : Queues;
 	auto_lastCycle: BOOL;
-	
+	myvar: INT;
 	initiated: BOOL;
 	ERR_lastCycle: INT;
 END_VAR
@@ -45,187 +14,7 @@ VAR_INPUT
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF ERR = 0 THEN
-	//----------------------------------------------------------	
-	//object entrance location top righ on lift.
-	
-	IF rightLiftOptical_IB AND rightLiftUpPosition_IB AND NOT T1 THEN
-		IF topRightLiftExp = 0 THEN
-			assigned := FALSE;
-			i := 1;
-			WHILE i<5 AND NOT assigned DO
-				IF obj[i] = 0 THEN
-					obj[i] := 1;
-					assigned := TRUE;
-				ELSE
-					i := i + 1;
-				END_IF
-			END_WHILE
-			IF NOT assigned THEN
-				ERR:=8;
-				RETURN;
-			END_IF
-			topRightExp := topRightExp+1;
-			topRightExpArr[topRightExp]:= i;
-		ELSE
-				topRightExp := topRightExp+1;
-				topRightExpArr[topRightExp]:= topRightLiftExpArr[1];
-				topRightLiftExp := 0;
-				topRightLiftExpArr[1] := 0;					
-		END_IF
-	
-	END_IF
-	fcT1(IN:=(rightLiftOptical_IB AND rightLiftUpPosition_IB), PT:=T#1S, Q=>T1);
-	
-	//----------------------------------------------------------
-	//object on top right conveyor sensor
-	
-	IF topRight_IB  AND NOT T2 THEN
-		IF topRightExp = 0 THEN
-			ERR := 1;
-			return;
-		ELSE
-			topRightExp := topRightExp -1;	
-			topLeftExp := topLeftExp +1;
-			topLeftExpArr[topLeftExp] := topRightExpArr[1];
-			topRightExpArr[1] := topRightExpArr[2];
-			topRightExpArr[2] := topRightExpArr[3];
-			topRightExpArr[3] := topRightExpArr[4];
-			topRightExpArr[4] := topRightExpArr[5];
-			topRightExpArr[5] := 0;		
-		END_IF
-	END_IF
-	fcT2(IN:=topRight_IB , PT:=T#300MS, Q=>T2);
-	
-	//----------------------------------------------------------
-	//object on top left conveyor sensor
-	
-	IF topLeft_IB AND NOT T3 THEN
-		IF topLeftExp = 0 THEN
-			ERR := 2;
-			RETURN;
-		ELSE
-			topLeftExp := topLeftExp -1;	
-			topLeftLiftExp := topLeftLiftExp +1;
-			topLeftLiftExpArr[topLeftLiftExp] :=topLeftExpArr[1];
-			topLeftExpArr[1] := topLeftExpArr[2];
-			topLeftExpArr[2] := topLeftExpArr[3];
-			topLeftExpArr[3] := topLeftExpArr[4];
-			topLeftExpArr[4] := topLeftExpArr[5];
-			topLeftExpArr[5] := 0;		
-		END_IF
-	END_IF
-	fcT3(IN:=topLeft_IB , PT:=T#300MS, Q=>T3);
-	
-	//----------------------------------------------------------
-	//object detected on left lift when the lift is up
-	
-	fcT4(IN:=(leftLiftUpPosition_IB AND leftLiftOptical_Ib), PT:=T#100MS, Q=>T4);
-	onDelayT9( IN:= T4,  PT:= T#2500MS, Q => T9);
-	IF T9 AND NOT T9c2 THEN
-		IF topLeftLiftExp = 0 THEN
-			ERR := 3;
-			RETURN;
-		ELSE
-			topLeftLiftExp := topLeftLiftExp - 1;
-			bottomLeftLiftExp := bottomLeftLiftExp +1;
-			bottomLeftLiftExpArr[bottomLeftLiftExp] := topLeftLiftExpArr[1];
-			topLeftLiftExpArr[1] := topLeftLiftExpArr[2];
-			topLeftLiftExpArr[2] := topLeftLiftExpArr[3];
-			topLeftLiftExpArr[3] := topLeftLiftExpArr[4];
-			topLeftLiftExpArr[4] := topLeftLiftExpArr[5];
-			topLeftLiftExpArr[5] := 0;
-		END_IF
-	END_IF
-	T9c2 := T9;
-	
-	//----------------------------------------------------------
-	//object detected on left lift when the lift is down
-	
-	IF leftLiftDownPosition_IB AND leftLiftOptical_IB AND NOT T5 THEN
-		IF bottomLeftLiftExp = 0 THEN
-			ERR := 4;
-		ELSE
-			bottomLeftLiftExp := 0;
-			bottomLeftExp := bottomLeftExp +1;
-			bottomLeftExpArr[bottomLeftExp] := bottomLeftLiftExpArr[1];
-			bottomLeftLiftExpArr[1] := 0;
-		END_IF
-	END_IF
-	fcT5(IN:=(leftLiftDownPosition_IB AND leftLiftOptical_IB), PT:=T#300MS, Q=>T5);
-	
-	
-	//----------------------------------------------------------
-	//object detected on bottom belt left sensor
-	
-	IF bottomLeft_IB AND NOT T5 THEN
-		IF bottomLeftExp = 0 THEN
-			ERR := 5;
-			RETURN;
-		ELSE
-			bottomLeftExp := bottomLeftExp - 1;
-			bottomRightExp := bottomRightExp +1;
-			bottomRightExpArr[bottomRightExp] := bottomLeftExpArr[1];
-			bottomLeftExpArr[1] := bottomLeftExpArr[2];
-			bottomLeftExpArr[2] := bottomLeftExpArr[3];
-			bottomLeftExpArr[3] := bottomLeftExpArr[4];
-			bottomLeftExpArr[4] := bottomLeftExpArr[5];
-			bottomLeftExpArr[5] := 0;
-		END_IF
-	END_IF
-	fcT5(IN:= bottomLeft_IB, PT:=T#300MS, Q=>T5);
-	
-	//----------------------------------------------------------
-	//object detected on bottom belt right sensor
-	
-	IF bottomRight_IB AND NOT T6 THEN
-		IF bottomRightExp = 0 THEN
-			ERR := 6;
-			RETURN;
-		ELSE
-			bottomRightExp := bottomRightExp - 1;
-			bottomRightLiftExp := bottomRightLiftExp +1;
-			bottomRightLiftExpArr[bottomRightLiftExp] := bottomRightExpArr[1];
-			bottomRightExpArr[1] := bottomRightExpArr[2];
-			bottomRightExpArr[2] := bottomRightExpArr[3];
-			bottomRightExpArr[3] := bottomRightExpArr[4];
-			bottomRightExpArr[4] := bottomRightExpArr[5];
-			bottomRightExpArr[5] := 0;
-		END_IF
-	END_IF
-	fcT6(IN:= bottomRight_IB, PT:=T#300MS, Q=>T6);
-	
-	//----------------------------------------------------------
-	//object detected on right lift sensor when the lift is down
-	
-	
-	fcT7(IN:=(rightLiftDownPosition_IB AND rightLiftOptical_IB), PT:=T#100MS, Q=>T7);
-	onDelayT10(IN:= T7, PT:=T#2500MS, Q=>T10);
-	IF (T10 AND NOT T10c2) AND NOT trowingObjectOut THEN
-		IF bottomRightLiftExp = 0 THEN
-			ERR := 7;
-			RETURN;
-		ELSE
-			bottomRightLiftExp := bottomRightLiftExp - 1;
-			IF obj[bottomRightLiftExpArr[1]] >= goAroundCycles THEN
-				obj[bottomRightLiftExpArr[1]] :=0;
-				trowObjectOut := TRUE;
-			ELSE
-				obj[bottomRightLiftExpArr[1]] :=1+obj[bottomRightLiftExpArr[1]];
-				topRightLiftExp := topRightLiftExp +1;
-				topRightLiftExpArr[topRightLiftExp] := bottomRightLiftExpArr[1];
-			END_IF
-			bottomRightLiftExpArr[1] := bottomRightLiftExpArr[2];
-			bottomRightLiftExpArr[2] := bottomRightLiftExpArr[3];
-			bottomRightLiftExpArr[3] := bottomRightLiftExpArr[4];
-			bottomRightLiftExpArr[4] := bottomRightLiftExpArr[5];
-			bottomRightLiftExpArr[5] := 0;
-		END_IF		
-
-	END_IF
-	T10c2 := T10;
-	fcT8(IN:=trowObjectOut, PT:=T#4S, Q=>TrowingObjectOut);
-	trowObjectOut := FALSE;
-	
+	queues();
 	IF auto THEN
 		outputFBD();	
 	END_IF
@@ -236,10 +25,21 @@ ELSE
 	IF ERR <> ERR_lastCycle THEN
 		CASE ERR OF
 			1:
-				errMessage := "1: Unexpected object on right lift (top position)";
+				errMessage := "1: Unexpected object on the right of top belt";
 			2:
-				errMessage := "2: Unexpected object on the right of top belt";
-			
+				errMessage := "2: Unexpected object on the left of top belt";
+			3:
+				errMessage := "3: Unexpected object on the left lift (top position)";
+			4:
+				errMessage := "3: Unexpected object on the left lift (bottom position)";
+			5:
+				errMessage := "5: Unexpected object on the left of bottom belt";
+			6:
+				errMessage := "6: Unexpected object on the right of bottom belt";
+			7:
+				errMessage := "7: Unexpected object on the right lift (bottom position)";
+			8:
+				errMessage := "8: Cannot accept new object. Over capacity.";
 
 		ELSE
 			errMessage := INT_TO_WSTRING(ERR);	

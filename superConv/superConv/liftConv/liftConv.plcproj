@@ -41,11 +41,11 @@
       <SubType>Code</SubType>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
     </Compile>
-    <Compile Include="POUs\resetOutputs.TcPOU">
+    <Compile Include="POUs\Queues.TcPOU">
       <SubType>Code</SubType>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
     </Compile>
-    <Compile Include="POUs\queues.TcPOU">
+    <Compile Include="POUs\resetOutputs.TcPOU">
       <SubType>Code</SubType>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
     </Compile>
@@ -61,6 +61,10 @@
       <SubType>Code</SubType>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+    </Compile>
+    <Compile Include="VISU_TASK.TcTTO">
+      <SubType>Code</SubType>
+      <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -209,7 +213,7 @@
             <o t="UserList">
               <a n="Users" cet="User">
                 <o>
-                  <v n="Id">{640816ad-55eb-494b-8e08-9273acb95f2a}</v>
+                  <v n="Id">{49a5daad-8bb8-4a64-8066-694fbca519a7}</v>
                   <v n="Name">"Owner"</v>
                   <v n="FullName">""</v>
                   <v n="Description">""</v>
@@ -225,24 +229,24 @@
             <o t="GroupList">
               <a n="Groups" cet="Group">
                 <o>
-                  <v n="Id">{d8db4961-b3d9-4585-8b2f-2fc2537e9cf2}</v>
-                  <v n="Name">"Everyone"</v>
-                  <v n="Description">""</v>
-                  <v n="IsEveryoneGroup">true</v>
-                  <v n="IsOwnerGroup">false</v>
-                  <l n="UserMembers" t="ArrayList" cet="Guid">
-                    <v>640816ad-55eb-494b-8e08-9273acb95f2a</v>
-                  </l>
-                  <l n="GroupMembers" t="ArrayList" />
-                </o>
-                <o>
-                  <v n="Id">{d5203825-01db-4bf3-b8eb-59a6a039ea90}</v>
+                  <v n="Id">{c4bedd90-ce69-4946-aa57-346d5dacb2f6}</v>
                   <v n="Name">"Owner"</v>
                   <v n="Description">""</v>
                   <v n="IsEveryoneGroup">false</v>
                   <v n="IsOwnerGroup">true</v>
                   <l n="UserMembers" t="ArrayList" cet="Guid">
-                    <v>640816ad-55eb-494b-8e08-9273acb95f2a</v>
+                    <v>49a5daad-8bb8-4a64-8066-694fbca519a7</v>
+                  </l>
+                  <l n="GroupMembers" t="ArrayList" />
+                </o>
+                <o>
+                  <v n="Id">{fdf887cc-4d1b-4ab4-bb79-8344e1351945}</v>
+                  <v n="Name">"Everyone"</v>
+                  <v n="Description">""</v>
+                  <v n="IsEveryoneGroup">true</v>
+                  <v n="IsOwnerGroup">false</v>
+                  <l n="UserMembers" t="ArrayList" cet="Guid">
+                    <v>49a5daad-8bb8-4a64-8066-694fbca519a7</v>
                   </l>
                   <l n="GroupMembers" t="ArrayList" />
                 </o>
@@ -251,7 +255,7 @@
             <v>UserAuthentication</v>
             <o t="UserAuthentication">
               <d n="UserToPasswordHash" t="Hashtable" ckt="Guid" cvt="String">
-                <v>640816ad-55eb-494b-8e08-9273acb95f2a</v>
+                <v>49a5daad-8bb8-4a64-8066-694fbca519a7</v>
                 <v>d41d8cd98f00b204e9800998ecf8427e</v>
               </d>
             </o>

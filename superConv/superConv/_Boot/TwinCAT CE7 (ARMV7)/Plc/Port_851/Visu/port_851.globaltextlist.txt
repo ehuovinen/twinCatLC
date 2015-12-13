@@ -1,0 +1,51 @@
+Id;Default
+49; %s
+16;%d
+41;%s
+38;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+40;Clear
+31;ERR. %d
+32;exp on bottomLeft %d
+22;exp on bottomLeft%d
+21;exp on bottomLeftLift %d
+33;exp on bottomRight %d
+23;exp on bottomRight%d
+35;exp on bottomRightLift %d
+24;exp on bottomRightLift%d
+34;exp on bottomRightLiftd
+37;exp on topLeft %d
+19;exp on topLeft%d
+36;exp on topLeftLift  %d
+20;exp on topLeftLift %d
+18;exp on topRighLift %d
+8;expecting     %d    :  %d d d d d on topRight
+9;expecting     %d    :  d d d d d on topRight
+7;expecting     %d    : d d d d d on topRight
+4;expecting     %d : %d %d %d %d %d on topRight
+5;expecting     %d : %d d d d d on topRight
+6;expecting     %d : d d d d d on topRight
+10;expecting     %i    :  d d d d d on topRight
+2;expecting     %i : %i %i %i %i %i
+3;expecting     %i : %i %i %i %i %i on topRight
+13;expecting %d
+12;expecting %d    :  %d d d d d on topRight
+11;expecting %d    :  d d d d d on topRight
+14;expecting %d %d
+15;expecting on topRigh %d
+17;expecting on topRighLift %d
+25;obj1 cycles: %d
+44;obj1 on cycle %d
+26;obj2 cycles: %d
+45;obj2 on cycle %d
+27;obj3 cycles: %d
+46;obj3 on cycle %d
+47;obj4 cycle %d
+28;obj4 cycles: %d
+48;obj4 on cycle %d
+43;Objects:
+30;Reset
+39;Reset Error
+42;textMA[auto]
+29;trowing out
+1;\n%i\n%i\n%i\n%i\n%i\nexp %i
+0;\nexp %i
