@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4018.5">
-  <POU Name="outputStates" Id="{59224dfc-4699-4a28-8716-cf5ad5998d68}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION outputStates : int
+  <POU Name="NotUsed" Id="{59224dfc-4699-4a28-8716-cf5ad5998d68}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION NotUsed : int
 VAR_INPUT
 END_VAR
 VAR
