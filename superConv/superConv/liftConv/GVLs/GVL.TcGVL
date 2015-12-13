@@ -119,7 +119,8 @@
 	ERR: INT;
 	resetError: BOOL;
 	auto: BOOL;
-	textMA : WSTRING;	
+	textMA : WSTRING;
+	errMessage : WSTRING;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

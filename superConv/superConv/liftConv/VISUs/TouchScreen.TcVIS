@@ -49,6 +49,306 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"Element-Fill-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">2340015797L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2565699834L</v>
+                      <v n="Value">"VCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1603690730L</v>
+                      <v n="Value">"Arial"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4253639993L</v>
+                      <v n="Value" t="Int16">12</v>
+                    </o>
+                    <o>
+                      <v n="Id">2729990903L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1213979116L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3488306084L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1649127785L</v>
+                      <v n="Value">3</v>
+                    </o>
+                    <o>
+                      <v n="Id">357335551L</v>
+                      <v n="Value">184</v>
+                    </o>
+                    <o>
+                      <v n="Id">2422045748L</v>
+                      <v n="Value">612</v>
+                    </o>
+                    <o>
+                      <v n="Id">2134141914L</v>
+                      <v n="Value">291</v>
+                    </o>
+                    <o>
+                      <v n="Id">3729828405L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleFont">
+                        <o>
+                          <v n="FontStyle">0</v>
+                          <v n="ExplicitColor">-16777216</v>
+                          <v n="CanonicalName">"Font-Standard"</v>
+                          <v n="FontName">"Arial"</v>
+                          <v n="FontSize">12</v>
+                          <o n="NamedColor" t="NamedStyleColor">
+                            <v n="Color">-16777216</v>
+                            <v n="CanonicalName">"Font-Default-Color"</v>
+                          </o>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">550940142L</v>
+                      <v n="Value">309</v>
+                    </o>
+                    <o>
+                      <v n="Id">1473355128L</v>
+                      <v n="Value">329</v>
+                    </o>
+                    <o>
+                      <v n="Id">2678395525L</v>
+                      <v n="Value">1U</v>
+                    </o>
+                    <o>
+                      <v n="Id">564465120L</v>
+                      <v n="Value">"VISU_ST_RECTANGLE"</v>
+                    </o>
+                    <o>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">2597686782L</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">"ERR &lt;&gt; 0"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">"ERR = 0"</v>
+                    </o>
+                  </l>
+                </o>
+                <v n="VisualElementName">"Rectangle"</v>
+                <v n="VisualElementTypeName">"VisuFbElemSimple"</v>
+                <v n="VisualElementIsRectangle">true</v>
+                <v n="VisualElementIdentifier">"GenElemInst_238"</v>
+                <n n="VisualElementOfflinePaintCommands" />
+                <n n="VisualElementFrameInformation" />
+                <d n="VisualElementInputActions" t="Hashtable" />
+                <v n="VisualElementIdentification">{ac5bbb8f-8921-45f7-8c82-05f3f6f6cf4f}</v>
+                <v n="VisualElementOwningObjectGuid">{b71f7a52-4e29-458a-b222-0c731d3d5203}</v>
+                <a n="LMGuids" et="Guid" />
+                <d n="SubElements" t="Hashtable" />
+                <v n="VisualElementId">3</v>
+                <l n="UserManagementAccessRights" t="ArrayList" />
+              </o>
+              <o>
+                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <l n="Elements" t="ArrayList" />
+                <n n="VisualElementDescription" />
+                <o n="VisualElemMemberList" t="VisualElemMemberList">
+                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                    <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"BasicElement-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"BasicElement-Fill-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-65536</v>
+                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-12337</v>
+                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">2340015797L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2565699834L</v>
+                      <v n="Value">"VCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1603690730L</v>
+                      <v n="Value">"Arial"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4253639993L</v>
+                      <v n="Value" t="Int16">12</v>
+                    </o>
+                    <o>
+                      <v n="Id">2729990903L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1213979116L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3488306084L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1649127785L</v>
+                      <v n="Value">290</v>
+                    </o>
+                    <o>
+                      <v n="Id">357335551L</v>
+                      <v n="Value">3</v>
+                    </o>
+                    <o>
+                      <v n="Id">2422045748L</v>
+                      <v n="Value">119</v>
+                    </o>
+                    <o>
+                      <v n="Id">2134141914L</v>
+                      <v n="Value">113</v>
+                    </o>
+                    <o>
+                      <v n="Id">3729828405L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleFont">
+                        <o>
+                          <v n="FontStyle">0</v>
+                          <v n="ExplicitColor">-16777216</v>
+                          <v n="CanonicalName">"Font-Standard"</v>
+                          <v n="FontName">"Arial"</v>
+                          <v n="FontSize">12</v>
+                          <o n="NamedColor" t="NamedStyleColor">
+                            <v n="Color">-16777216</v>
+                            <v n="CanonicalName">"Font-Default-Color"</v>
+                          </o>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">550940142L</v>
+                      <v n="Value">349</v>
+                    </o>
+                    <o>
+                      <v n="Id">1473355128L</v>
+                      <v n="Value">59</v>
+                    </o>
+                    <o>
+                      <v n="Id">2678395525L</v>
+                      <v n="Value">1U</v>
+                    </o>
+                    <o>
+                      <v n="Id">564465120L</v>
+                      <v n="Value">"VISU_ST_RECTANGLE"</v>
+                    </o>
+                    <o>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">2597686782L</v>
+                      <v n="Value">true</v>
+                    </o>
+                  </l>
+                </o>
+                <v n="VisualElementName">"Rectangle"</v>
+                <v n="VisualElementTypeName">"VisuFbElemSimple"</v>
+                <v n="VisualElementIsRectangle">true</v>
+                <v n="VisualElementIdentifier">"GenElemInst_236"</v>
+                <n n="VisualElementOfflinePaintCommands" />
+                <n n="VisualElementFrameInformation" />
+                <d n="VisualElementInputActions" t="Hashtable" />
+                <v n="VisualElementIdentification">{095432f2-ff66-481f-a6c8-1ef5e6e66b58}</v>
+                <v n="VisualElementOwningObjectGuid">{b71f7a52-4e29-458a-b222-0c731d3d5203}</v>
+                <a n="LMGuids" et="Guid" />
+                <d n="SubElements" t="Hashtable" />
+                <v n="VisualElementId">2</v>
+                <l n="UserManagementAccessRights" t="ArrayList" />
+              </o>
+              <o>
+                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <l n="Elements" t="ArrayList" />
+                <n n="VisualElementDescription" />
+                <o n="VisualElemMemberList" t="VisualElemMemberList">
+                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                    <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"BasicElement-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"BasicElement-Fill-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-65536</v>
+                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
                           <v n="Color">-12337</v>
                           <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
                         </o>
@@ -7800,7 +8100,7 @@
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value" t="Int16">25</v>
+                      <v n="Value" t="Int16">55</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -7832,7 +8132,7 @@
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">32</v>
+                      <v n="Value">62</v>
                     </o>
                     <o>
                       <v n="Id">2678395525L</v>
@@ -7844,7 +8144,7 @@
                     </o>
                     <o>
                       <v n="Id">390574330L</v>
-                      <v n="Value">"obj2 cycles: %d"</v>
+                      <v n="Value">"obj2 on cycle %d"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -7855,8 +8155,12 @@
                       <v n="Value">"GVL.obj[2]"</v>
                     </o>
                     <o>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">"GVL.obj[2] = 0"</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
-                      <v n="Value">"26"</v>
+                      <v n="Value">"45"</v>
                     </o>
                   </l>
                 </o>
@@ -7954,7 +8258,7 @@
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value" t="Int16">7</v>
+                      <v n="Value" t="Int16">37</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -7986,7 +8290,7 @@
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">14</v>
+                      <v n="Value">44</v>
                     </o>
                     <o>
                       <v n="Id">2678395525L</v>
@@ -7998,7 +8302,7 @@
                     </o>
                     <o>
                       <v n="Id">390574330L</v>
-                      <v n="Value">"obj1 cycles: %d"</v>
+                      <v n="Value">"obj1 on cycle %d"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -8009,8 +8313,12 @@
                       <v n="Value">"GVL.obj[1]"</v>
                     </o>
                     <o>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">"GVL.obj[1]=0"</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
-                      <v n="Value">"25"</v>
+                      <v n="Value">"44"</v>
                     </o>
                   </l>
                 </o>
@@ -8108,7 +8416,7 @@
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value" t="Int16">45</v>
+                      <v n="Value" t="Int16">75</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -8140,7 +8448,7 @@
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">52</v>
+                      <v n="Value">82</v>
                     </o>
                     <o>
                       <v n="Id">2678395525L</v>
@@ -8152,7 +8460,7 @@
                     </o>
                     <o>
                       <v n="Id">390574330L</v>
-                      <v n="Value">"obj3 cycles: %d"</v>
+                      <v n="Value">"obj3 on cycle %d"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -8163,8 +8471,12 @@
                       <v n="Value">"GVL.obj[3]"</v>
                     </o>
                     <o>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">"GVL.obj[3] = 0"</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
-                      <v n="Value">"27"</v>
+                      <v n="Value">"46"</v>
                     </o>
                   </l>
                 </o>
@@ -8262,7 +8574,7 @@
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value" t="Int16">65</v>
+                      <v n="Value" t="Int16">95</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -8294,7 +8606,7 @@
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">72</v>
+                      <v n="Value">102</v>
                     </o>
                     <o>
                       <v n="Id">2678395525L</v>
@@ -8306,7 +8618,7 @@
                     </o>
                     <o>
                       <v n="Id">390574330L</v>
-                      <v n="Value">"obj4 cycles: %d"</v>
+                      <v n="Value">"obj4 on cycle %d"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -8317,8 +8629,12 @@
                       <v n="Value">"GVL.obj[4]"</v>
                     </o>
                     <o>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">"GVL.obj[4]=0"</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
-                      <v n="Value">"28"</v>
+                      <v n="Value">"48"</v>
                     </o>
                   </l>
                 </o>
@@ -10748,10 +11064,10 @@
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>DefaultArraySize</v>
-                                <v>500</v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> There is no more information than the parent provides</v>
+                                <v>DefaultArraySize</v>
+                                <v>500</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -10802,8 +11118,6 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>PolygonPoints</v>
-                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticPolygonPos</v>
                             <v>DisplayTextId</v>
@@ -10818,6 +11132,8 @@
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
+                            <v>PolygonPoints</v>
+                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -11697,10 +12013,10 @@
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>''NORMAL__COMMENT</v>
-                                <v> There is no more information than the parent provides</v>
                                 <v>DefaultArraySize</v>
                                 <v>500</v>
+                                <v>''NORMAL__COMMENT</v>
+                                <v> There is no more information than the parent provides</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -11751,6 +12067,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                            <v>PolygonPoints</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticPolygonPos</v>
                             <v>DisplayTextId</v>
@@ -11765,8 +12083,6 @@
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
-                            <v>PolygonPoints</v>
-                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -12646,10 +12962,10 @@
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>DefaultArraySize</v>
-                                <v>500</v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> There is no more information than the parent provides</v>
+                                <v>DefaultArraySize</v>
+                                <v>500</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -12700,8 +13016,6 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>PolygonPoints</v>
-                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticPolygonPos</v>
                             <v>DisplayTextId</v>
@@ -12716,6 +13030,8 @@
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
+                            <v>PolygonPoints</v>
+                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -13589,10 +13905,10 @@
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>''NORMAL__COMMENT</v>
-                                <v> There is no more information than the parent provides</v>
                                 <v>DefaultArraySize</v>
                                 <v>500</v>
+                                <v>''NORMAL__COMMENT</v>
+                                <v> There is no more information than the parent provides</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -13643,6 +13959,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                            <v>PolygonPoints</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticPolygonPos</v>
                             <v>DisplayTextId</v>
@@ -13657,8 +13975,6 @@
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
-                            <v>PolygonPoints</v>
-                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -14532,10 +14848,10 @@
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>DefaultArraySize</v>
-                                <v>500</v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> There is no more information than the parent provides</v>
+                                <v>DefaultArraySize</v>
+                                <v>500</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -14586,8 +14902,6 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>PolygonPoints</v>
-                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticPolygonPos</v>
                             <v>DisplayTextId</v>
@@ -14602,6 +14916,8 @@
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
+                            <v>PolygonPoints</v>
+                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -15475,10 +15791,10 @@
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>DefaultArraySize</v>
-                                <v>500</v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> There is no more information than the parent provides</v>
+                                <v>DefaultArraySize</v>
+                                <v>500</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -15529,8 +15845,6 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>PolygonPoints</v>
-                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticPolygonPos</v>
                             <v>DisplayTextId</v>
@@ -15545,6 +15859,8 @@
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
+                            <v>PolygonPoints</v>
+                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -16418,10 +16734,10 @@
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>''NORMAL__COMMENT</v>
-                                <v> There is no more information than the parent provides</v>
                                 <v>DefaultArraySize</v>
                                 <v>500</v>
+                                <v>''NORMAL__COMMENT</v>
+                                <v> There is no more information than the parent provides</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -16472,6 +16788,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                            <v>PolygonPoints</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticPolygonPos</v>
                             <v>DisplayTextId</v>
@@ -16486,8 +16804,6 @@
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
-                            <v>PolygonPoints</v>
-                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -17361,10 +17677,10 @@
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>DefaultArraySize</v>
-                                <v>500</v>
                                 <v>''NORMAL__COMMENT</v>
                                 <v> There is no more information than the parent provides</v>
+                                <v>DefaultArraySize</v>
+                                <v>500</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -17415,8 +17731,6 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
-                            <v>PolygonPoints</v>
-                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticPolygonPos</v>
                             <v>DisplayTextId</v>
@@ -17431,6 +17745,8 @@
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
+                            <v>PolygonPoints</v>
+                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -18304,10 +18620,10 @@
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>''NORMAL__COMMENT</v>
-                                <v> There is no more information than the parent provides</v>
                                 <v>DefaultArraySize</v>
                                 <v>500</v>
+                                <v>''NORMAL__COMMENT</v>
+                                <v> There is no more information than the parent provides</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -18358,6 +18674,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                            <v>PolygonPoints</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticPolygonPos</v>
                             <v>DisplayTextId</v>
@@ -18372,8 +18690,6 @@
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
-                            <v>PolygonPoints</v>
-                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -19247,10 +19563,10 @@
                                 <v>TL_ElementProperties.Points</v>
                                 <v>DescriptionUseFromParent</v>
                                 <v></v>
-                                <v>''NORMAL__COMMENT</v>
-                                <v> There is no more information than the parent provides</v>
                                 <v>DefaultArraySize</v>
                                 <v>500</v>
+                                <v>''NORMAL__COMMENT</v>
+                                <v> There is no more information than the parent provides</v>
                               </d>
                               <v n="ConvDone">true</v>
                             </o>
@@ -19301,6 +19617,8 @@
                         <o n="TypeNodeAttributes" t="TypeNodeAttributes2">
                           <v n="AttrFlags">81920UL</v>
                           <d n="TypeNodeAttributesData" t="CaseInsensitiveHashtable" ckt="String" cvt="String">
+                            <v>PolygonPoints</v>
+                            <v></v>
                             <v>DescriptionTextId</v>
                             <v>TL_ElementProperties.Desc_StaticPolygonPos</v>
                             <v>DisplayTextId</v>
@@ -19315,8 +19633,6 @@
                             <v>visu_elemdev</v>
                             <v>Storable</v>
                             <v>True</v>
-                            <v>PolygonPoints</v>
-                            <v></v>
                           </d>
                           <v n="ConvDone">true</v>
                         </o>
@@ -19644,8 +19960,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -19679,19 +19995,19 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">425</v>
+                      <v n="Value">203</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">37</v>
+                      <v n="Value">159</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value">69</v>
+                      <v n="Value">326</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
-                      <v n="Value">68</v>
+                      <v n="Value">24</v>
                     </o>
                     <o>
                       <v n="Id">3729828405L</v>
@@ -19711,11 +20027,11 @@
                     </o>
                     <o>
                       <v n="Id">550940142L</v>
-                      <v n="Value">459</v>
+                      <v n="Value">366</v>
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">71</v>
+                      <v n="Value">171</v>
                     </o>
                     <o>
                       <v n="Id">2678395525L</v>
@@ -19727,7 +20043,7 @@
                     </o>
                     <o>
                       <v n="Id">390574330L</v>
-                      <v n="Value">"ERR. %d"</v>
+                      <v n="Value">" %s"</v>
                     </o>
                     <o>
                       <v n="Id">2597686782L</v>
@@ -19735,11 +20051,19 @@
                     </o>
                     <o>
                       <v n="Id">2477733581L</v>
-                      <v n="Value">"ERR"</v>
+                      <v n="Value">"errMessage"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">"ERR &lt;&gt; 0"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">"ERR = 0"</v>
                     </o>
                     <o>
                       <v n="Id">823443203L</v>
-                      <v n="Value">"31"</v>
+                      <v n="Value">"49"</v>
                     </o>
                   </l>
                 </o>
@@ -19805,11 +20129,11 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">500</v>
+                      <v n="Value">532</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">58</v>
+                      <v n="Value">153</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
@@ -19859,11 +20183,11 @@
                     </o>
                     <o>
                       <v n="Id">550940142L</v>
-                      <v n="Value">540</v>
+                      <v n="Value">572</v>
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">73</v>
+                      <v n="Value">168</v>
                     </o>
                     <o>
                       <v n="Id">493260384L</v>
@@ -19890,6 +20214,10 @@
                       <v n="Value">false</v>
                     </o>
                     <o>
+                      <v n="Id">2880254039L</v>
+                      <v n="Value">"ERR = 0"</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"40"</v>
                     </o>
@@ -19901,7 +20229,7 @@
                 <v n="VisualElementIdentifier">"GenElemInst_171"</v>
                 <n n="VisualElementOfflinePaintCommands" />
                 <n n="VisualElementFrameInformation" />
-                <d n="VisualElementInputActions" t="Hashtable" ckt="String" cvt="IInputAction[]">
+                <d n="VisualElementInputActions" t="Hashtable" ckt="String" cvt="ToggleVarInputAction[]">
                   <v>OnMouseDown</v>
                   <a cet="ToggleVarInputAction">
                     <o>
@@ -20058,7 +20386,7 @@
                 <v n="VisualElementIdentifier">"GenElemInst_172"</v>
                 <n n="VisualElementOfflinePaintCommands" />
                 <n n="VisualElementFrameInformation" />
-                <d n="VisualElementInputActions" t="Hashtable" ckt="String" cvt="IInputAction[]">
+                <d n="VisualElementInputActions" t="Hashtable" ckt="String" cvt="ToggleVarInputAction[]">
                   <v>OnMouseDown</v>
                   <a cet="ToggleVarInputAction">
                     <o>
@@ -24124,6 +24452,124 @@
                 <v n="VisualElementId">231</v>
                 <l n="UserManagementAccessRights" t="ArrayList" />
               </o>
+              <o>
+                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <l n="Elements" t="ArrayList" />
+                <n n="VisualElementDescription" />
+                <o n="VisualElemMemberList" t="VisualElemMemberList">
+                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                    <o>
+                      <v n="Id">2340015797L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2565699834L</v>
+                      <v n="Value">"VCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1603690730L</v>
+                      <v n="Value">"Arial"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4253639993L</v>
+                      <v n="Value" t="Int16">12</v>
+                    </o>
+                    <o>
+                      <v n="Id">2729990903L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1213979116L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3488306084L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1649127785L</v>
+                      <v n="Value">316</v>
+                    </o>
+                    <o>
+                      <v n="Id">357335551L</v>
+                      <v n="Value">5</v>
+                    </o>
+                    <o>
+                      <v n="Id">2422045748L</v>
+                      <v n="Value">60</v>
+                    </o>
+                    <o>
+                      <v n="Id">2134141914L</v>
+                      <v n="Value">30</v>
+                    </o>
+                    <o>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">"Objects:"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3729828405L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleFont">
+                        <o>
+                          <v n="FontStyle">0</v>
+                          <v n="ExplicitColor">-16777216</v>
+                          <v n="CanonicalName">"Font-Standard"</v>
+                          <v n="FontName">"Arial"</v>
+                          <v n="FontSize">12</v>
+                          <o n="NamedColor" t="NamedStyleColor">
+                            <v n="Color">-16777216</v>
+                            <v n="CanonicalName">"Font-Default-Color"</v>
+                          </o>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2678395525L</v>
+                      <v n="Value">1U</v>
+                    </o>
+                    <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">2597686782L</v>
+                      <v n="Value">true</v>
+                    </o>
+                    <o>
+                      <v n="Id">823443203L</v>
+                      <v n="Value">"43"</v>
+                    </o>
+                  </l>
+                </o>
+                <v n="VisualElementName">"Label"</v>
+                <v n="VisualElementTypeName">"VisuFbLabel"</v>
+                <v n="VisualElementIsRectangle">true</v>
+                <v n="VisualElementIdentifier">"GenElemInst_237"</v>
+                <n n="VisualElementOfflinePaintCommands" />
+                <n n="VisualElementFrameInformation" />
+                <d n="VisualElementInputActions" t="Hashtable" />
+                <v n="VisualElementIdentification">{cf3be86c-707a-4346-9322-2872bc98b8ab}</v>
+                <v n="VisualElementOwningObjectGuid">{b71f7a52-4e29-458a-b222-0c731d3d5203}</v>
+                <a n="LMGuids" et="Guid" />
+                <d n="SubElements" t="Hashtable" />
+                <v n="VisualElementId">233</v>
+                <l n="UserManagementAccessRights" t="ArrayList" />
+              </o>
             </l>
             <v n="BackgroundBitmapId">""</v>
             <v n="BackgroundColor">16777215</v>
@@ -24271,7 +24717,7 @@
             </o>
             <v n="DialogDut">{b45af06f-f8ec-494f-abc2-8ce0910b560e}</v>
           </o>
-          <v n="LastUsedIdForIdentifier">235</v>
+          <v n="LastUsedIdForIdentifier">238</v>
           <o n="TextDocument" t="TextDocument">
             <a n="TextLines" cet="TextLine">
               <o>
@@ -24321,7 +24767,6 @@
         <Type n="Guid">System.Guid</Type>
         <Type n="Hashtable">System.Collections.Hashtable</Type>
         <Type n="HotkeyConfiguration">{6b108d46-58af-4e41-a3f4-174d8f160cc4}</Type>
-        <Type n="IInputAction[]">_3S.CoDeSys.VisualElem.IInputAction[], VisualElem, Version=3.5.6.0, Culture=neutral, PublicKeyToken=null</Type>
         <Type n="Int16">System.Int16</Type>
         <Type n="Int32">System.Int32</Type>
         <Type n="Int64">System.Int64</Type>

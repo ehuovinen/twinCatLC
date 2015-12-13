@@ -6,6 +6,11 @@
         <o xml:space="preserve" t="GlobalTextListObject">
           <l n="TextList" t="ArrayList" cet="TextListRow">
             <o>
+              <v n="TextID">"49"</v>
+              <v n="TextDefault">" %s"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"16"</v>
               <v n="TextDefault">"%d"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -176,8 +181,18 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"44"</v>
+              <v n="TextDefault">"obj1 on cycle %d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"26"</v>
               <v n="TextDefault">"obj2 cycles: %d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"45"</v>
+              <v n="TextDefault">"obj2 on cycle %d"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -186,8 +201,28 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"46"</v>
+              <v n="TextDefault">"obj3 on cycle %d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"47"</v>
+              <v n="TextDefault">"obj4 cycle %d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"28"</v>
               <v n="TextDefault">"obj4 cycles: %d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"48"</v>
+              <v n="TextDefault">"obj4 on cycle %d"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"43"</v>
+              <v n="TextDefault">"Objects:"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

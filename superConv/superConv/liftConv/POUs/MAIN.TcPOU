@@ -38,6 +38,7 @@ VAR
 	auto_lastCycle: BOOL;
 	
 	initiated: BOOL;
+	ERR_lastCycle: INT;
 END_VAR
 
 VAR_INPUT
@@ -231,14 +232,31 @@ END_VAR]]></Declaration>
 ELSE
 	//error handling
 	resetOutputs();
+	
+	IF ERR <> ERR_lastCycle THEN
+		CASE ERR OF
+			1:
+				errMessage := "1: Unexpected object on right lift (top position)";
+			2:
+				errMessage := "2: Unexpected object on the right of top belt";
+			
+
+		ELSE
+			errMessage := INT_TO_WSTRING(ERR);	
+		END_CASE
+			
+	END_IF
+	ERR_lastCycle := ERR;
 END_IF
 
-//queues();
+
 IF resetAll OR b5 THEN
 	reset();
 END_IF
+
 IF resetError OR b5 THEN
 	ERR :=0;
+	auto := False;
 	resetError := FALSE;
 END_IF
 
@@ -255,6 +273,10 @@ IF NOT auto AND auto_lastCycle THEN
 END_IF
 auto_lastCycle := auto;
 
+IF NOT initiated THEN
+	textMA := "MANUAL";
+END_IF
+initiated := TRUE;
 
 
 ]]></ST>
