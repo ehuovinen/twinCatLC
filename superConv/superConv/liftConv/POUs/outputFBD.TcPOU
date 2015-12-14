@@ -932,6 +932,10 @@ END_VAR
                             <v n="Flags">0</v>
                             <v n="Fixed">false</v>
                           </o>
+                          <o>
+                            <v n="Flags">0</v>
+                            <v n="Fixed">false</v>
+                          </o>
                         </l2>
                         <l2 n="InputItems">
                           <o t="BoxTreeBox">
@@ -1034,6 +1038,24 @@ END_VAR
                               <v n="Id">185L</v>
                             </o>
                             <v n="Id">184L</v>
+                          </o>
+                          <o t="BoxTreeOperand">
+                            <o n="Operand" t="Operand">
+                              <v n="Operand">"topBeltLeft_OB"</v>
+                              <v n="Type">"BOOL"</v>
+                              <v n="Comment">""</v>
+                              <v n="SymbolComment">" DO 9 - Top belt left"</v>
+                              <v n="Address">"%Q*"</v>
+                              <o n="Flags" t="Flags">
+                                <v n="Flags">0</v>
+                                <v n="Fixed">false</v>
+                              </o>
+                              <v n="LValue">false</v>
+                              <v n="Boolean">false</v>
+                              <v n="IsInstance">false</v>
+                              <v n="Id">514L</v>
+                            </o>
+                            <v n="Id">513L</v>
                           </o>
                         </l2>
                         <o n="InputParam" t="ParamList">
@@ -3056,7 +3078,24 @@ END_VAR
                               <v n="Flags">0</v>
                               <v n="Fixed">false</v>
                             </o>
-                            <n n="InputFlags" />
+                            <l2 n="InputFlags" cet="Flags">
+                              <o>
+                                <v n="Flags">0</v>
+                                <v n="Fixed">false</v>
+                              </o>
+                              <o>
+                                <v n="Flags">0</v>
+                                <v n="Fixed">false</v>
+                              </o>
+                              <o>
+                                <v n="Flags">0</v>
+                                <v n="Fixed">false</v>
+                              </o>
+                              <o>
+                                <v n="Flags">1</v>
+                                <v n="Fixed">true</v>
+                              </o>
+                            </l2>
                             <l2 n="InputItems">
                               <o t="BoxTreeBox">
                                 <v n="BoxType">"GT"</v>
@@ -3241,6 +3280,24 @@ END_VAR
                                   <v n="Id">415L</v>
                                 </o>
                                 <v n="Id">414L</v>
+                              </o>
+                              <o t="BoxTreeOperand">
+                                <o n="Operand" t="Operand">
+                                  <v n="Operand">"trowingObjectOut"</v>
+                                  <v n="Type">"BOOL"</v>
+                                  <v n="Comment">""</v>
+                                  <v n="SymbolComment">""</v>
+                                  <v n="Address">""</v>
+                                  <o n="Flags" t="Flags">
+                                    <v n="Flags">0</v>
+                                    <v n="Fixed">false</v>
+                                  </o>
+                                  <v n="LValue">false</v>
+                                  <v n="Boolean">false</v>
+                                  <v n="IsInstance">false</v>
+                                  <v n="Id">512L</v>
+                                </o>
+                                <v n="Id">511L</v>
                               </o>
                             </l2>
                             <o n="InputParam" t="ParamList">

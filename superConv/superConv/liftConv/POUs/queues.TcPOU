@@ -116,7 +116,7 @@ fcT3(IN:=topLeft_IB , PT:=T#300MS, Q=>T3);
 //object detected on left lift when the lift is up
 
 fcT4(IN:=(leftLiftUpPosition_IB AND leftLiftOptical_Ib), PT:=T#100MS, Q=>T4);
-onDelayT9( IN:= T4,  PT:= T#2300MS, Q => T9);
+onDelayT9( IN:= T4,  PT:= T#1500MS, Q => T9);
 IF T9 AND NOT T9c2 THEN
 	IF topLeftLiftExp = 0 THEN
 		ERR := 3;
@@ -195,7 +195,7 @@ fcT6(IN:= bottomRight_IB, PT:=T#300MS, Q=>T6);
 
 
 fcT7(IN:=(rightLiftDownPosition_IB AND rightLiftOptical_IB), PT:=T#100MS, Q=>T7);
-onDelayT10(IN:= T7, PT:=T#2300MS, Q=>T10);
+onDelayT10(IN:= T7, PT:=T#1500MS, Q=>T10);
 IF (T10 AND NOT T10c2) AND NOT trowingObjectOut THEN
 	IF bottomRightLiftExp = 0 THEN
 		ERR := 7;
@@ -219,7 +219,7 @@ IF (T10 AND NOT T10c2) AND NOT trowingObjectOut THEN
 
 END_IF
 T10c2 := T10;
-fcT8(IN:=trowObjectOut, PT:=T#4S, Q=>TrowingObjectOut);
+fcT8(IN:=(trowObjectOut or (trowingObjectOut and rightLiftOptical_IB)), PT:=T#2S, Q=>TrowingObjectOut);
 trowObjectOut := FALSE;]]></ST>
     </Implementation>
   </POU>

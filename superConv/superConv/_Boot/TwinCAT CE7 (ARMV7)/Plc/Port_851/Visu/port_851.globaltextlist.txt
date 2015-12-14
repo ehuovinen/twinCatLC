@@ -1,9 +1,14 @@
 Id;Default
 49; %s
+55; bottomLeft %d
+57; bottomRightLift %d
 16;%d
 41;%s
 38;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+54;bottomLeftLift %d
+56;bottomRight %d
 40;Clear
+58;Cycle : % d
 31;ERR. %d
 32;exp on bottomLeft %d
 22;exp on bottomLeft%d
@@ -42,10 +47,16 @@ Id;Default
 47;obj4 cycle %d
 28;obj4 cycles: %d
 48;obj4 on cycle %d
+59;Object n.1
 43;Objects:
 30;Reset
+60;Reset all
 39;Reset Error
 42;textMA[auto]
+52;topLeft %d
+53;topLeftLift  %d
+51;topRigh %d
+50;topRighLift %d
 29;trowing out
 1;\n%i\n%i\n%i\n%i\n%i\nexp %i
 0;\nexp %i
